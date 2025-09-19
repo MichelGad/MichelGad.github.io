@@ -895,8 +895,8 @@ p {
 
 .graphical-abstract-image {
     width: 100%;
-    height: 150px;
-    object-fit: cover;
+    height: 200px;
+    object-fit: contain;
     display: block;
     transition: var(--transition);
 }
@@ -1052,6 +1052,18 @@ p {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
+    background: var(--primary-color);
+    color: var(--text-white);
+    border: 2px solid var(--primary-color);
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+}
+
+.update-links .btn:hover {
+    background: var(--secondary-color);
+    border-color: var(--secondary-color);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-medium);
 }
 
 /* Conferences Section */
@@ -1518,7 +1530,7 @@ p {
     
     /* Graphical Abstract Responsive */
     .graphical-abstract-image {
-        height: 120px;
+        height: 160px;
     }
     
     .graphical-abstract-label {
@@ -1546,7 +1558,7 @@ html {
     
     /* Graphical Abstract Mobile */
     .graphical-abstract-image {
-        height: 100px;
+        height: 130px;
     }
     
     .graphical-abstract-label {
