@@ -23,16 +23,51 @@ document.addEventListener('DOMContentLoaded', function() {
         updateThemeIcon('light');
     }
     
-    // Theme toggle functionality
+    // Theme toggle functionality with swipe animation
     if (themeToggle) {
         themeToggle.addEventListener('click', function() {
             const currentTheme = html.getAttribute('data-theme');
             const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
             
-            html.setAttribute('data-theme', newTheme);
-            localStorage.setItem('theme', newTheme);
-            updateThemeIcon(newTheme);
+            // Create swipe animation
+            createThemeSwipe(() => {
+                html.setAttribute('data-theme', newTheme);
+                localStorage.setItem('theme', newTheme);
+                updateThemeIcon(newTheme);
+            });
         });
+    }
+    
+    // Create theme swipe animation
+    function createThemeSwipe(callback) {
+        // Create transition container
+        const transitionContainer = document.createElement('div');
+        transitionContainer.className = 'theme-transition';
+        
+        // Create swipe element
+        const swipeElement = document.createElement('div');
+        swipeElement.className = 'theme-swipe';
+        
+        // Add to DOM
+        transitionContainer.appendChild(swipeElement);
+        document.body.appendChild(transitionContainer);
+        
+        // Start animation
+        requestAnimationFrame(() => {
+            swipeElement.style.animation = 'swipeTransition 0.3s cubic-bezier(0.4, 0, 0.2, 1) forwards';
+        });
+        
+        // Execute callback at peak of animation
+        setTimeout(() => {
+            if (callback) callback();
+        }, 150);
+        
+        // Clean up after animation
+        setTimeout(() => {
+            if (transitionContainer.parentNode) {
+                transitionContainer.parentNode.removeChild(transitionContainer);
+            }
+        }, 300);
     }
     
     // Listen for system theme changes
@@ -49,6 +84,28 @@ document.addEventListener('DOMContentLoaded', function() {
             themeIcon.className = theme === 'dark' ? 'fas fa-moon' : 'fas fa-sun';
         }
     }
+
+    // Project Filter Functionality
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const projectCategories = document.querySelectorAll('.project-category');
+
+    filterButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const filter = this.getAttribute('data-filter');
+            
+            // Update active button
+            filterButtons.forEach(btn => btn.classList.remove('active'));
+            this.classList.add('active');
+            
+            // Show/hide project categories
+            projectCategories.forEach(category => {
+                category.classList.remove('active');
+                if (category.id === `${filter}-content`) {
+                    category.classList.add('active');
+                }
+            });
+        });
+    });
     
     // Typing Animation
     const typingText = document.getElementById('typing-text');

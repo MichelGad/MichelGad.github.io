@@ -1,6 +1,6 @@
 # Michel Gad - Academic Portfolio
 
-A modern, responsive academic portfolio website showcasing research in environmental analytical chemistry, nanoparticle research, and data management. Built with a focus on scientific presentation and professional design.
+A modern, responsive academic portfolio website showcasing research in environmental analytical chemistry, nanoparticle research, and data management. Built with a focus on scientific presentation, professional design, and comprehensive dark/light theme support.
 
 ## 🌊 About
 
@@ -19,6 +19,8 @@ This portfolio represents Michel Gad's academic journey as a Ph.D. Candidate at 
 - **Scientific Elements** - Molecular patterns, water ripples, and nanoparticle-inspired animations
 - **Professional Typography** - Source Serif Pro for headings, Inter for body text, JetBrains Mono for code
 - **Responsive Layout** - Optimized for desktop, tablet, and mobile devices
+- **🌙 Dark/Light Theme** - Automatic system preference detection with manual toggle
+- **Theme Persistence** - User preference saved in localStorage
 
 ### 📊 Interactive Elements
 - **Typing Animation** - Cycles through professional identities and research focus
@@ -26,12 +28,15 @@ This portfolio represents Michel Gad's academic journey as a Ph.D. Candidate at 
 - **Hover Effects** - Interactive cards and buttons with smooth transitions
 - **Parallax Background** - Dynamic hero section with floating molecular patterns
 - **Mobile Navigation** - Hamburger menu for mobile devices
+- **Theme Toggle** - Horizontal switch with sun/moon icons for theme switching
 
 ### 🔬 Research Showcase
 - **Research Focus Cards** - Three main research areas with detailed descriptions
-- **Publications Section** - Featured papers with journal logos and direct links
-- **Experience Timeline** - Academic journey with achievements and skills
+- **Publications Section** - Featured papers with journal logos, direct links, and graphical abstracts
+- **Experience Timeline** - Academic journey with achievements and skills (updated date format)
 - **SciTrace Project** - Dedicated section for the research data management platform
+- **📰 Updates Section** - Recent activities, published code projects, and current work
+- **GitHub Integration** - Direct links to published repositories and projects
 
 ### 📱 Contact & Interaction
 - **Contact Form** - Functional form with validation and notifications
@@ -58,26 +63,31 @@ This portfolio represents Michel Gad's academic journey as a Ph.D. Candidate at 
 - **Clipboard API** - Email copying functionality
 - **Form Validation** - Client-side form validation
 - **Smooth Scrolling** - Native CSS scroll-behavior
+- **Theme Management** - System preference detection and localStorage persistence
+- **Responsive Images** - Optimized graphical abstracts with proper sizing
 
 ## 📁 Project Structure
 
 ```
-IssyyA.github.io/
+MichelGad.github.io/
 ├── index.html              # Main website file
 ├── README.md               # Project documentation
 ├── favicon.svg             # Custom SVG favicon
 └── assets/
     ├── css/
-    │   └── style.css       # Main stylesheet
+    │   └── style.css       # Main stylesheet with dark/light theme support
     ├── js/
-    │   └── main.js         # JavaScript functionality
+    │   └── main.js         # JavaScript functionality including theme management
     └── images/
         ├── portrait.jpg     # Profile photo
         ├── logo-water-research.png
         ├── logo-acs.jpeg
         ├── logo-rsc-nano.png
         ├── logo-ufz.jpeg
-        └── logo-uni-siegen.jpeg
+        ├── logo-uni-siegen.jpeg
+        ├── graphical-abstract-dom.png
+        ├── graphical-abstract-nano.png
+        └── graphical-abstract-bioimaging.png
 ```
 
 ## 🚀 Getting Started
@@ -110,20 +120,35 @@ Then visit `http://localhost:8000` in your browser.
 ## 🎯 Key Sections
 
 ### Hero Section
-- **Professional Introduction** - Name, title, and research focus
+- **Professional Introduction** - Full name display and research focus
 - **Typing Animation** - Dynamic text cycling through expertise areas
 - **Research Statistics** - Key achievements and metrics
 - **Call-to-Action Buttons** - Direct links to research and SciTrace
+- **Theme Toggle** - Sun/moon switch for dark/light mode
 
 ### Research Focus
 - **Nanoparticle Fate & Behavior** - TiO₂ NPs and eco-corona research
 - **Surface Water Analysis** - DOM composition and environmental drivers
 - **Predictive Modeling** - Machine learning and multivariate analysis
 
+### Updates Section
+- **Recent Activities** - Current work and project updates
+- **Published Code Projects** - NP_SRFA_Ratio and DOM-Drivers repositories
+- **SciTrace Releases** - Version updates and new features
+- **GitHub Integration** - Direct links to all published repositories
+
 ### Publications
 - **Water Research** - Environmental drivers of DOM composition
 - **Environmental Science: Nano** - ζ-potential prediction of TiO₂ NPs
 - **ACS Applied Bio Materials** - Bioimaging of biomolecules
+- **Graphical Abstracts** - Visual representations of research findings
+
+### Experience Timeline
+- **UFZ Research** - Current Ph.D. work and achievements
+- **Siegen University** - Student Assistant in spICP-MS signal processing
+- **BAM Collaboration** - Previous research experience
+- **Skills Integration** - Technical expertise and methodologies
+- **Updated Date Format** - Consistent timeline styling
 
 ### SciTrace Project
 - **Research Data Management Platform** - Data lineage and workflow tracking
@@ -131,17 +156,12 @@ Then visit `http://localhost:8000` in your browser.
 - **Feature Highlights** - Key capabilities and technologies
 - **GitHub Integration** - Direct link to project repository
 
-### Experience Timeline
-- **UFZ Research** - Current Ph.D. work and achievements
-- **Siegen University** - Student Assistant in spICP-MS signal processing
-- **BAM Collaboration** - Previous research experience
-- **Skills Integration** - Technical expertise and methodologies
-
 ## 🎨 Customization
 
-### Colors
-The website uses CSS custom properties for easy theming:
+### Colors & Themes
+The website uses CSS custom properties for easy theming with comprehensive dark/light mode support:
 
+**Light Theme:**
 ```css
 :root {
     --primary-color: #1e40af;      /* Deep blue */
@@ -150,6 +170,22 @@ The website uses CSS custom properties for easy theming:
     --water-blue: #0c4a6e;        /* Ocean blue */
     --ocean-deep: #0f172a;         /* Dark blue */
     --sky-light: #e0f2fe;         /* Light blue */
+    --text-dark: #1e293b;         /* Dark text */
+    --text-white: #ffffff;        /* White text */
+    --bg-white: #ffffff;          /* White background */
+}
+```
+
+**Dark Theme:**
+```css
+[data-theme="dark"] {
+    --primary-color: #60a5fa;      /* Light blue */
+    --secondary-color: #38bdf8;    /* Cyan blue */
+    --accent-color: #22d3ee;       /* Bright cyan */
+    --text-dark: #f1f5f9;         /* Light text */
+    --text-white: #ffffff;        /* White text */
+    --bg-white: #0f172a;          /* Dark background */
+    --card-bg: rgba(30, 41, 59, 0.95); /* Dark card background */
 }
 ```
 
@@ -160,10 +196,12 @@ The website uses CSS custom properties for easy theming:
 
 ### Content Updates
 - **Profile Information**: Update `index.html` with new details
-- **Publications**: Add new papers to the publications section
+- **Publications**: Add new papers to the publications section with graphical abstracts
 - **Research Focus**: Modify research cards to reflect current work
 - **Experience**: Update timeline with new positions or achievements
+- **Updates Section**: Add new activities, code releases, and project updates
 - **Institution Logos**: Add new logo files to `assets/images/` directory
+- **Theme Customization**: Modify CSS variables to change color schemes
 
 ## 📱 Responsive Design
 
@@ -184,6 +222,55 @@ The website is fully responsive with breakpoints at:
 - **Firefox** 55+
 - **Safari** 12+
 - **Edge** 79+
+
+## 🆕 Recent Updates
+
+### Version 2.0 - Major Theme & Content Updates
+
+#### 🌙 Dark/Light Theme System
+- **Automatic Theme Detection** - Detects user's system preference (dark/light)
+- **Manual Theme Toggle** - Horizontal switch with sun/moon icons in header
+- **Theme Persistence** - User preference saved in localStorage
+- **Comprehensive Dark Mode** - All sections properly themed for dark mode
+- **Smooth Transitions** - Animated theme switching throughout the site
+
+#### 📰 New Updates Section
+- **Recent Activities Timeline** - Current work and project updates
+- **Published Code Projects** - NP_SRFA_Ratio and DOM-Drivers repositories
+- **SciTrace Releases** - Version updates and new features
+- **GitHub Integration** - Direct links to all published repositories
+- **Consistent Date Format** - Unified timeline styling across sections
+
+#### 🖼️ Enhanced Publications
+- **Graphical Abstracts** - Visual representations of research findings
+- **Responsive Images** - Optimized sizing to prevent cropping
+- **Updated Publication Title** - More descriptive paper titles
+- **Improved Layout** - Better visual hierarchy and spacing
+
+#### 🎨 UI/UX Improvements
+- **Fixed Navigation** - Header remains visible when scrolling
+- **Consistent Button Styling** - All GitHub buttons use primary styling
+- **Updated Branding** - Full name display instead of initials
+- **Enhanced Mobile Experience** - Improved mobile navigation and theme toggle
+- **Professional Footer** - Streamlined footer content
+
+#### 🔧 Technical Enhancements
+- **Theme Management JavaScript** - Robust theme switching functionality
+- **CSS Custom Properties** - Comprehensive dark mode variable system
+- **Responsive Theme Toggle** - Mobile-optimized theme switch
+- **Improved Accessibility** - Better contrast and ARIA labels
+
+### Key Features Added
+- ✅ Dark/Light theme with system preference detection
+- ✅ Theme toggle with sun/moon icons
+- ✅ Updates section with timeline format
+- ✅ Graphical abstracts for publications
+- ✅ Published code project showcase
+- ✅ Consistent date formatting across sections
+- ✅ Fixed navigation header behavior
+- ✅ Enhanced mobile responsiveness
+- ✅ Improved button consistency
+- ✅ Professional branding updates
 
 ## 📄 License
 
