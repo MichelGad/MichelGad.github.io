@@ -195,27 +195,56 @@ p {
 
 .theme-toggle {
     background: transparent;
-    border: 2px solid var(--border-color);
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.toggle-track {
+    width: 60px;
+    height: 30px;
+    background: #fbbf24;
+    border-radius: 15px;
+    position: relative;
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
+    padding: 2px;
+}
+
+.toggle-thumb {
+    width: 26px;
+    height: 26px;
+    background: #f59e0b;
     border-radius: 50%;
-    width: 40px;
-    height: 40px;
+    position: absolute;
+    left: 2px;
+    transition: var(--transition);
     display: flex;
     align-items: center;
     justify-content: center;
-    cursor: pointer;
-    transition: var(--transition);
-    color: var(--text-dark);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-.theme-toggle:hover {
-    background: var(--sky-light);
-    border-color: var(--primary-color);
-    transform: scale(1.05);
+.toggle-thumb i {
+    font-size: 0.8rem;
+    color: white;
+    transition: var(--transition);
 }
 
-.theme-toggle i {
-    font-size: 1.1rem;
-    transition: var(--transition);
+/* Dark mode toggle styles */
+[data-theme="dark"] .toggle-track {
+    background: #1e40af;
+}
+
+[data-theme="dark"] .toggle-thumb {
+    background: #3b82f6;
+    left: 32px;
+}
+
+.theme-toggle:hover .toggle-thumb {
+    transform: scale(1.1);
 }
 
 .nav-toggle span {
@@ -1484,9 +1513,18 @@ p {
         gap: 0.5rem;
     }
     
-    .theme-toggle {
-        width: 35px;
-        height: 35px;
+    .toggle-track {
+        width: 50px;
+        height: 25px;
+    }
+    
+    .toggle-thumb {
+        width: 21px;
+        height: 21px;
+    }
+    
+    [data-theme="dark"] .toggle-thumb {
+        left: 27px;
     }
     
     .hero-content {
