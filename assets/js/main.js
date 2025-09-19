@@ -107,30 +107,14 @@ document.addEventListener('DOMContentLoaded', function() {
             navbar.classList.remove('scrolled');
         }
         
-        // Only hide navbar when scrolling down significantly
-        if (scrollDelta > 5 && scrollTop > 100 && !isNavbarHidden) {
-            navbar.style.transform = 'translateY(-100%)';
-            isNavbarHidden = true;
-        } 
-        // Show navbar when scrolling up or at the top
-        else if (scrollDelta < -5 || scrollTop <= 100) {
-            navbar.style.transform = 'translateY(0)';
-            isNavbarHidden = false;
-        }
+        // Keep navbar always visible - disabled hiding behavior
+        navbar.style.transform = 'translateY(0)';
+        isNavbarHidden = false;
         
         lastScrollTop = scrollTop;
         ticking = false;
         
-        // Clear any existing timeout
-        clearTimeout(scrollTimeout);
-        
-        // Set a timeout to ensure navbar is visible if user stops scrolling
-        scrollTimeout = setTimeout(() => {
-            if (scrollTop > 100) {
-                navbar.style.transform = 'translateY(0)';
-                isNavbarHidden = false;
-            }
-        }, 150);
+        // Navbar always visible - no timeout needed
     }
 
     function requestTick() {
