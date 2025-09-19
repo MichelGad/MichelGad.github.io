@@ -92,19 +92,66 @@ document.addEventListener('DOMContentLoaded', function() {
     // Navbar scroll effect
     const navbar = document.querySelector('.navbar');
     let lastScrollTop = 0;
+    let ticking = false;
+    let isNavbarHidden = false;
+    let scrollTimeout;
 
-    window.addEventListener('scroll', function() {
+    function updateNavbar() {
         const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        const scrollDelta = scrollTop - lastScrollTop;
         
-        if (scrollTop > lastScrollTop && scrollTop > 100) {
-            // Scrolling down
-            navbar.style.transform = 'translateY(-100%)';
+        // Add scrolled class for styling
+        if (scrollTop > 50) {
+            navbar.classList.add('scrolled');
         } else {
-            // Scrolling up
+            navbar.classList.remove('scrolled');
+        }
+        
+        // Only hide navbar when scrolling down significantly
+        if (scrollDelta > 5 && scrollTop > 100 && !isNavbarHidden) {
+            navbar.style.transform = 'translateY(-100%)';
+            isNavbarHidden = true;
+        } 
+        // Show navbar when scrolling up or at the top
+        else if (scrollDelta < -5 || scrollTop <= 100) {
             navbar.style.transform = 'translateY(0)';
+            isNavbarHidden = false;
         }
         
         lastScrollTop = scrollTop;
+        ticking = false;
+        
+        // Clear any existing timeout
+        clearTimeout(scrollTimeout);
+        
+        // Set a timeout to ensure navbar is visible if user stops scrolling
+        scrollTimeout = setTimeout(() => {
+            if (scrollTop > 100) {
+                navbar.style.transform = 'translateY(0)';
+                isNavbarHidden = false;
+            }
+        }, 150);
+    }
+
+    function requestTick() {
+        if (!ticking) {
+            requestAnimationFrame(updateNavbar);
+            ticking = true;
+        }
+    }
+
+    window.addEventListener('scroll', requestTick, { passive: true });
+    
+    // Ensure navbar is visible on page load
+    window.addEventListener('load', function() {
+        navbar.style.transform = 'translateY(0)';
+        isNavbarHidden = false;
+    });
+    
+    // Reset navbar state on resize
+    window.addEventListener('resize', function() {
+        navbar.style.transform = 'translateY(0)';
+        isNavbarHidden = false;
     });
 
     // Mobile navigation toggle
