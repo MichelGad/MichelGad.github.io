@@ -28,6 +28,30 @@
     --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* Dark Mode Variables */
+[data-theme="dark"] {
+    --primary-color: #60a5fa;
+    --secondary-color: #38bdf8;
+    --accent-color: #22d3ee;
+    --water-blue: #1e40af;
+    --ocean-deep: #0f172a;
+    --sky-light: #1e3a8a;
+    --molecular-green: #10b981;
+    --research-orange: #f97316;
+    --text-dark: #f1f5f9;
+    --text-light: #94a3b8;
+    --text-white: #ffffff;
+    --bg-light: #1e293b;
+    --bg-white: #0f172a;
+    --bg-gradient: linear-gradient(135deg, #1e40af 0%, #0ea5e9 100%);
+    --card-bg: rgba(30, 41, 59, 0.95);
+    --border-color: #334155;
+    --shadow-light: 0 1px 3px 0 rgba(0, 0, 0, 0.3);
+    --shadow-medium: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+    --shadow-heavy: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+    --shadow-glow: 0 0 20px rgba(96, 165, 250, 0.3);
+}
+
 /* Reset and Base Styles */
 * {
     margin: 0;
@@ -161,6 +185,37 @@ p {
     flex-direction: column;
     gap: 4px;
     cursor: pointer;
+}
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.theme-toggle {
+    background: transparent;
+    border: 2px solid var(--border-color);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: var(--transition);
+    color: var(--text-dark);
+}
+
+.theme-toggle:hover {
+    background: var(--sky-light);
+    border-color: var(--primary-color);
+    transform: scale(1.05);
+}
+
+.theme-toggle i {
+    font-size: 1.1rem;
+    transition: var(--transition);
 }
 
 .nav-toggle span {
@@ -1423,6 +1478,15 @@ p {
     
     .nav-toggle {
         display: flex;
+    }
+    
+    .nav-actions {
+        gap: 0.5rem;
+    }
+    
+    .theme-toggle {
+        width: 35px;
+        height: 35px;
     }
     
     .hero-content {

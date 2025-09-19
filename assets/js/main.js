@@ -3,6 +3,53 @@
 
 document.addEventListener('DOMContentLoaded', function() {
     
+    // Theme Management
+    const themeToggle = document.getElementById('theme-toggle');
+    const themeIcon = document.getElementById('theme-icon');
+    const html = document.documentElement;
+    
+    // Check for saved theme preference or default to system preference
+    const savedTheme = localStorage.getItem('theme');
+    const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    
+    if (savedTheme) {
+        html.setAttribute('data-theme', savedTheme);
+        updateThemeIcon(savedTheme);
+    } else if (systemPrefersDark) {
+        html.setAttribute('data-theme', 'dark');
+        updateThemeIcon('dark');
+    } else {
+        html.setAttribute('data-theme', 'light');
+        updateThemeIcon('light');
+    }
+    
+    // Theme toggle functionality
+    if (themeToggle) {
+        themeToggle.addEventListener('click', function() {
+            const currentTheme = html.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            
+            html.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            updateThemeIcon(newTheme);
+        });
+    }
+    
+    // Listen for system theme changes
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function(e) {
+        if (!localStorage.getItem('theme')) {
+            const newTheme = e.matches ? 'dark' : 'light';
+            html.setAttribute('data-theme', newTheme);
+            updateThemeIcon(newTheme);
+        }
+    });
+    
+    function updateThemeIcon(theme) {
+        if (themeIcon) {
+            themeIcon.className = theme === 'dark' ? 'fas fa-moon' : 'fas fa-sun';
+        }
+    }
+    
     // Typing Animation
     const typingText = document.getElementById('typing-text');
     const texts = [
