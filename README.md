@@ -15,12 +15,14 @@ This portfolio represents Michel Gad's academic journey as a Ph.D. Candidate at 
 ## ✨ Features
 
 ### 🎨 Modern Design
+- **macOS 26 Liquid Glass UI** - Translucent materials with dynamic adaptation and glassmorphism effects
 - **Environmental Chemistry Theme** - Water-inspired color palette with deep blues and ocean tones
 - **Scientific Elements** - Molecular patterns, water ripples, and nanoparticle-inspired animations
 - **Professional Typography** - Source Serif Pro for headings, Inter for body text, JetBrains Mono for code
 - **Responsive Layout** - Optimized for desktop, tablet, and mobile devices
 - **🌙 Dark/Light Theme** - Automatic system preference detection with manual toggle
 - **Theme Persistence** - User preference saved in localStorage
+- **Glass Effects** - Frosted glass backgrounds with backdrop-filter blur and dynamic materials
 
 ### 📊 Interactive Elements
 - **Typing Animation** - Cycles through professional identities and research focus
@@ -49,6 +51,7 @@ This portfolio represents Michel Gad's academic journey as a Ph.D. Candidate at 
 ### Frontend
 - **HTML5** - Semantic markup and accessibility
 - **CSS3** - Modern styling with CSS Grid, Flexbox, and custom properties
+- **CSS Glassmorphism** - Backdrop-filter blur effects and translucent materials
 - **JavaScript (ES6+)** - Interactive features and animations
 - **Font Awesome** - Professional icons throughout the interface
 
@@ -57,6 +60,7 @@ This portfolio represents Michel Gad's academic journey as a Ph.D. Candidate at 
 - **CSS Variables** - Consistent theming and easy customization
 - **CSS Animations** - Smooth transitions and micro-interactions
 - **Responsive Design** - Mobile-first approach with breakpoints
+- **Glassmorphism Effects** - Backdrop-filter blur with translucent materials
 
 ### Features
 - **Intersection Observer API** - Scroll-triggered animations
@@ -225,6 +229,35 @@ The website is fully responsive with breakpoints at:
 
 ## 🆕 Recent Updates
 
+### Version 3.0 - macOS 26 Liquid Glass UI & Enhanced Design
+
+#### 🍎 macOS 26 Liquid Glass UI Implementation
+- **Liquid Glass Design Language** - Translucent materials with dynamic adaptation
+- **Glassmorphism Effects** - Frosted glass backgrounds with backdrop-filter blur
+- **Dynamic Material System** - Glass effects that reflect and refract surroundings
+- **Enhanced Depth & Layering** - Multiple glass layers with proper z-indexing
+
+#### 🎨 Advanced Visual Design
+- **Water Research Background** - Custom Midjourney-generated background image
+- **Gradient Overlays** - Theme-specific overlays for optimal text visibility
+- **Blur Effects** - Strategic blur positioning for content readability
+- **Shadow System** - Refined text shadows for both light and dark themes
+- **Theme-Specific Styling** - Optimized appearance for each color scheme
+
+#### 📱 Enhanced User Experience
+- **Clean Light Theme** - Removed white shadow effects for natural appearance
+- **Refined Dark Theme** - Maintained appropriate shadows for contrast
+- **Improved Text Visibility** - Better contrast and readability across themes
+- **Professional Styling** - Clean, modern appearance with subtle effects
+- **Consistent Design Language** - Unified styling across all elements
+
+#### 🔧 Technical Improvements
+- **CSS Variables System** - Comprehensive theming with macOS 26 colors
+- **Backdrop Filter Support** - Modern glass effects with fallbacks
+- **Responsive Glass Effects** - Optimized blur values for different screen sizes
+- **Theme-Specific Shadows** - Appropriate shadow treatment for each theme
+- **Performance Optimizations** - Efficient CSS with hardware acceleration
+
 ### Version 2.0 - Major Theme & Content Updates
 
 #### 🌙 Dark/Light Theme System
@@ -261,6 +294,14 @@ The website is fully responsive with breakpoints at:
 - **Improved Accessibility** - Better contrast and ARIA labels
 
 ### Key Features Added
+- ✅ macOS 26 Liquid Glass UI design system
+- ✅ Glassmorphism effects with backdrop-filter
+- ✅ Water research background with Midjourney credit
+- ✅ Theme-specific shadow optimization
+- ✅ Clean light theme without white shadows
+- ✅ Enhanced text visibility and contrast
+- ✅ Professional glass effect styling
+- ✅ Responsive glass effects for all devices
 - ✅ Dark/Light theme with system preference detection
 - ✅ Theme toggle with sun/moon icons
 - ✅ Updates section with timeline format

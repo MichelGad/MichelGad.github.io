@@ -7,10 +7,10 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
     <link rel="apple-touch-icon" href="/favicon.svg">
     
-    <!-- Modern Fonts -->
+    <!-- macOS 26 Glass UI Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Source+Serif+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@100;200;300;400;500;600;700;800;900&family=SF+Pro+Text:wght@100;200;300;400;500;600;700;800;900&family=SF+Mono:wght@400;500;600;700&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
@@ -44,10 +44,10 @@
                         </div>
                     </div>
                 </button>
-            <div class="nav-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
+                <div class="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
             </div>
         </div>
@@ -55,10 +55,14 @@
 </nav>
 
 <!-- Hero Section -->
-<section id="home" class="hero">
+<section id="home" class="hero" style="background-image: url('assets/images/water-research-background.png?v=1'); background-size: cover; background-position: center; background-repeat: no-repeat; background-attachment: scroll;">
     <div class="hero-background">
+        <div class="hero-background-image"></div>
         <div class="molecular-pattern"></div>
         <div class="water-ripple"></div>
+        <div class="background-credit">
+            <span>Background image created with Midjourney</span>
+        </div>
     </div>
     <div class="container">
         <div class="hero-content">
@@ -105,11 +109,10 @@
     <div class="container">
         <div class="section-header">
             <h2 class="section-title">Research Focus</h2>
-            <p class="section-subtitle">Advancing understanding of environmental processes through analytical chemistry</p>
         </div>
         
         <div class="research-grid">
-            <div class="research-card">
+            <div class="research-card glass-hover">
                 <div class="card-icon">
                     <i class="fas fa-atom"></i>
                 </div>
@@ -122,7 +125,7 @@
                 </div>
             </div>
             
-            <div class="research-card">
+            <div class="research-card glass-hover">
                 <div class="card-icon">
                     <i class="fas fa-water"></i>
                 </div>
@@ -135,7 +138,7 @@
                 </div>
             </div>
             
-            <div class="research-card">
+            <div class="research-card glass-hover">
                 <div class="card-icon">
                     <i class="fas fa-brain"></i>
                 </div>
@@ -162,7 +165,7 @@
             <div class="update-item">
                 <div class="update-date">
                     <span class="date-day">20</span>
-                    <span class="date-month">Jan</span>
+                    <span class="date-month">Sep</span>
                     <span class="date-year">2025</span>
                 </div>
                 <div class="update-content">
@@ -258,111 +261,110 @@
     <div class="container">
         <div class="section-header">
             <h2 class="section-title">Publications</h2>
-            <p class="section-subtitle">Recent scientific contributions to environmental chemistry</p>
             </div>
 
         <div class="publications-grid">
             <div class="publication-card featured">
-                <div class="publication-header">
-                    <div class="journal-info">
-                        <img src="assets/images/logo-water-research.png" alt="Water Research" class="journal-logo">
-                        <div class="journal-details">
-                            <h3>Environmental drivers of dissolved organic matter composition across central European aquatic systems</h3>
-                            <p class="journal-name">Water Research</p>
-                            <p class="publication-year">2025</p>
+                <div class="publication-upper">
+                    <div class="graphical-abstract">
+                        <img src="assets/images/graphical-abstract-dom.png" alt="Graphical Abstract - DOM Composition" class="graphical-abstract-image">
+                    </div>
+                </div>
+                <div class="publication-lower">
+                    <div class="publication-header">
+                        <div class="journal-info">
+                            <img src="assets/images/logo-water-research.png" alt="Water Research" class="journal-logo">
+                            <div class="journal-details">
+                                <h3>Environmental drivers of dissolved organic matter composition across central European aquatic systems</h3>
+                                <p class="journal-name">Water Research</p>
+                                <p class="publication-year">2025</p>
+                            </div>
                         </div>
                     </div>
-
-                </div>
-                <div class="graphical-abstract">
-                    <img src="assets/images/graphical-abstract-dom.png" alt="Graphical Abstract - DOM Composition" class="graphical-abstract-image">
-                    <div class="graphical-abstract-overlay">
-                        <span class="graphical-abstract-label">Graphical Abstract</span>
+                    <p class="publication-abstract">
+                        Novel correlation-based machine learning model integrating FT-ICR MS data to predict DOM composition and identify key environmental drivers.
+                    </p>
+                    <div class="publication-keywords">
+                        <span class="keyword">Dissolved Organic Matter</span>
+                        <span class="keyword">FT-ICR MS</span>
+                        <span class="keyword">Machine Learning</span>
+                        <span class="keyword">Environmental Drivers</span>
                     </div>
-                </div>
-                <p class="publication-abstract">
-                    Novel correlation-based machine learning model integrating FT-ICR MS data to predict DOM composition and identify key environmental drivers.
-                </p>
-                <div class="publication-keywords">
-                    <span class="keyword">Dissolved Organic Matter</span>
-                    <span class="keyword">FT-ICR MS</span>
-                    <span class="keyword">Machine Learning</span>
-                    <span class="keyword">Environmental Drivers</span>
-                </div>
-                <div class="publication-links">
-                    <a href="https://www.sciencedirect.com/science/article/pii/S0043135424019183?via%3Dihub" target="_blank" class="btn btn-primary">
-                        <i class="fas fa-external-link-alt"></i>
-                        Read Paper
-                    </a>
+                    <div class="publication-links">
+                        <a href="https://www.sciencedirect.com/science/article/pii/S0043135424019183?via%3Dihub" target="_blank" class="btn btn-primary">
+                            <i class="fas fa-external-link-alt"></i>
+                            Read Paper
+                        </a>
+                    </div>
                 </div>
             </div>
             
             <div class="publication-card featured">
-                <div class="publication-header">
-                    <div class="journal-info">
-                        <img src="assets/images/logo-rsc-nano.png" alt="Environmental Science: Nano" class="journal-logo">
-                        <div class="journal-details">
-                            <h3>Measuring and predicting the ζ-potential of anthropogenic TiO₂-nanoparticles in surface waters</h3>
-                            <p class="journal-name">Environmental Science: Nano</p>
-                            <p class="publication-year">2025</p>
+                <div class="publication-upper">
+                    <div class="graphical-abstract">
+                        <img src="assets/images/graphical-abstract-nano.png" alt="Graphical Abstract - TiO₂ Nanoparticles" class="graphical-abstract-image">
+                    </div>
+                </div>
+                <div class="publication-lower">
+                    <div class="publication-header">
+                        <div class="journal-info">
+                            <img src="assets/images/logo-rsc-nano.png" alt="Environmental Science: Nano" class="journal-logo">
+                            <div class="journal-details">
+                                <h3>Measuring and predicting the ζ-potential of anthropogenic TiO₂-nanoparticles in surface waters</h3>
+                                <p class="journal-name">Environmental Science: Nano</p>
+                                <p class="publication-year">2025</p>
+                            </div>
                         </div>
                     </div>
-
-                </div>
-                <div class="graphical-abstract">
-                    <img src="assets/images/graphical-abstract-nano.png" alt="Graphical Abstract - TiO₂ Nanoparticles" class="graphical-abstract-image">
-                    <div class="graphical-abstract-overlay">
-                        <span class="graphical-abstract-label">Graphical Abstract</span>
+                    <p class="publication-abstract">
+                        Novel approach for determining and predicting the ζ-potential of nanoparticles in surface waters using XGBoost models and in-situ exposure methods.
+                    </p>
+                    <div class="publication-keywords">
+                        <span class="keyword">TiO₂ Nanoparticles</span>
+                        <span class="keyword">ζ-potential</span>
+                        <span class="keyword">XGBoost</span>
+                        <span class="keyword">Surface Waters</span>
                     </div>
-                </div>
-                <p class="publication-abstract">
-                    Novel approach for determining and predicting the ζ-potential of nanoparticles in surface waters using XGBoost models and in-situ exposure methods.
-                </p>
-                <div class="publication-keywords">
-                    <span class="keyword">TiO₂ Nanoparticles</span>
-                    <span class="keyword">ζ-potential</span>
-                    <span class="keyword">XGBoost</span>
-                    <span class="keyword">Surface Waters</span>
-                </div>
-                <div class="publication-links">
-                    <a href="https://pubs.rsc.org/en/Content/ArticleLanding/2025/EN/D5EN00248F" target="_blank" class="btn btn-primary">
-                        <i class="fas fa-external-link-alt"></i>
-                        Read Paper
-                    </a>
+                    <div class="publication-links">
+                        <a href="https://pubs.rsc.org/en/Content/ArticleLanding/2025/EN/D5EN00248F" target="_blank" class="btn btn-primary">
+                            <i class="fas fa-external-link-alt"></i>
+                            Read Paper
+                        </a>
+                    </div>
                 </div>
             </div>
 
             <div class="publication-card">
-                <div class="publication-header">
-                    <div class="journal-info">
-                        <img src="assets/images/logo-acs.jpeg" alt="ACS Applied Bio Materials" class="journal-logo">
-                        <div class="journal-details">
-                            <h3>Imaging Keratan Sulfate in Ocular Tissue Sections by Immunofluorescence Microscopy and LA-ICP-MS</h3>
-                            <p class="journal-name">ACS Applied Bio Materials</p>
-                            <p class="publication-year">2022</p>
+                <div class="publication-upper">
+                    <div class="graphical-abstract">
+                        <img src="assets/images/graphical-abstract-bioimaging.png" alt="Graphical Abstract - Bioimaging" class="graphical-abstract-image">
+                    </div>
+                </div>
+                <div class="publication-lower">
+                    <div class="publication-header">
+                        <div class="journal-info">
+                            <img src="assets/images/logo-acs.jpeg" alt="ACS Applied Bio Materials" class="journal-logo">
+                            <div class="journal-details">
+                                <h3>Imaging Keratan Sulfate in Ocular Tissue Sections by Immunofluorescence Microscopy and LA-ICP-MS</h3>
+                                <p class="journal-name">ACS Applied Bio Materials</p>
+                                <p class="publication-year">2022</p>
+                            </div>
                         </div>
                     </div>
-
-                </div>
-                <div class="graphical-abstract">
-                    <img src="assets/images/graphical-abstract-bioimaging.png" alt="Graphical Abstract - Bioimaging" class="graphical-abstract-image">
-                    <div class="graphical-abstract-overlay">
-                        <span class="graphical-abstract-label">Graphical Abstract</span>
+                    <p class="publication-abstract">
+                        Advanced bioimaging workflow using immunofluorescence microscopy and LA-ICP-MS for spatial resolution of biomolecules.
+                    </p>
+                    <div class="publication-keywords">
+                        <span class="keyword">Bioimaging</span>
+                        <span class="keyword">LA-ICP-MS</span>
+                        <span class="keyword">Tissue Analysis</span>
                     </div>
-                </div>
-                <p class="publication-abstract">
-                    Advanced bioimaging workflow using immunofluorescence microscopy and LA-ICP-MS for spatial resolution of biomolecules.
-                </p>
-                                <div class="publication-keywords">
-                    <span class="keyword">Bioimaging</span>
-                    <span class="keyword">LA-ICP-MS</span>
-                    <span class="keyword">Tissue Analysis</span>
-                </div>
-                <div class="publication-links">
-                    <a href="https://pubs.acs.org/doi/10.1021/acsabm.1c01240" target="_blank" class="btn btn-primary">
-                        <i class="fas fa-external-link-alt"></i>
-                        Read Paper
-                    </a>
+                    <div class="publication-links">
+                        <a href="https://pubs.acs.org/doi/10.1021/acsabm.1c01240" target="_blank" class="btn btn-primary">
+                            <i class="fas fa-external-link-alt"></i>
+                            Read Paper
+                        </a>
+                    </div>
                 </div>
             </div>
                     </div>
@@ -374,7 +376,6 @@
     <div class="container">
         <div class="section-header">
             <h2 class="section-title">Research Experience</h2>
-            <p class="section-subtitle">Academic journey in environmental analytical chemistry</p>
         </div>
         
         <div class="roadmap-timeline">
@@ -486,7 +487,6 @@
     <div class="container">
         <div class="section-header">
             <h2 class="section-title">Projects</h2>
-            <p class="section-subtitle">A collection of my work across different domains</p>
         </div>
         
         <div class="project-filters">
@@ -504,7 +504,13 @@
                     <i class="fas fa-project-diagram"></i>
                     <span>Research Data Management</span>
                 </div>
-                <h3>SciTrace - Research Data Lineage Platform</h3>
+                <h3 class="project-title">
+                    <img src="assets/images/scitrace-logo.png" alt="SciTrace" class="project-logo">
+                    <div class="title-text">
+                        <div class="title-line-1">SciTrace</div>
+                        <div class="title-line-2">Research Data Lineage Platform</div>
+                    </div>
+                </h3>
                 <p class="project-description">
                     A comprehensive research data lineage platform that integrates with DataLad functionalities and adds interactive visualizations for the complete data lifecycle. SciTrace helps researchers track data transformations, execute code seamlessly, and maintain complete trails of their research data workflows.
                 </p>
@@ -804,7 +810,6 @@
     <div class="container">
         <div class="section-header">
             <h2 class="section-title">Get in Touch</h2>
-            <p class="section-subtitle">Interested in collaboration or research opportunities?</p>
         </div>
         
         <div class="contact-content">
@@ -886,15 +891,6 @@
         <div class="footer-content">
             <div class="footer-info">
                 <p>&copy; 2025 Michel Gad. All rights reserved.</p>
-            </div>
-            <div class="footer-links">
-                <a href="#home">Home</a>
-                <a href="#research">Research</a>
-                <a href="#updates">Updates</a>
-                <a href="#publications">Publications</a>
-                <a href="#experience">Experience</a>
-                <a href="#scitrace">SciTrace</a>
-                <a href="#contact">Contact</a>
             </div>
         </div>
     </div>
