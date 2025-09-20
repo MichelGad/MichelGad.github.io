@@ -13,114 +13,162 @@ This portfolio represents Michel Gad's academic journey as a Ph.D. Candidate at 
 - **Machine Learning Applications in Environmental Science**
 - **Interdisciplinary Data Management**
 
+## 🚀 Live Website
+
+Visit the live portfolio at: **[michelgad.github.io](https://michelgad.github.io)**
+
 ## ✨ Features
 
-### 🎨 Modern Design
-- **macOS 26 Liquid Glass UI** - Translucent materials with dynamic adaptation and glassmorphism effects
+### 🎨 Modern Design System
+- **macOS 26 Sequoia Glass UI** - Translucent materials with dynamic adaptation and glassmorphism effects
 - **Environmental Chemistry Theme** - Water-inspired color palette with deep blues and ocean tones
-- **Scientific Elements** - Molecular patterns, water ripples, and nanoparticle-inspired animations
-- **Professional Typography** - Source Serif Pro for headings, Inter for body text, JetBrains Mono for code
-- **Responsive Layout** - Optimized for desktop, tablet, and mobile devices
+- **Scientific Visual Elements** - Molecular patterns, water ripples, and nanoparticle-inspired animations
+- **Professional Typography** - SF Pro Display/Text, Inter, and SF Mono for code
+- **Responsive Layout** - Mobile-first design optimized for all devices
 - **🌙 Dark/Light Theme** - Automatic system preference detection with manual toggle
-- **Theme Persistence** - User preference saved in localStorage
-- **Glass Effects** - Frosted glass backgrounds with backdrop-filter blur and dynamic materials
+- **Theme Persistence** - User preference saved in localStorage with smooth transitions
 
-### 📊 Interactive Elements
-- **Typing Animation** - Cycles through professional identities and research focus
-- **Smooth Scrolling** - Seamless navigation between sections
+### 🔬 Academic Portfolio Features
+- **Research Timeline** - Comprehensive academic journey with achievements and publications
+- **Technical Skills Showcase** - 8 detailed skill areas including data stewardship and FAIR principles
+- **Publications Gallery** - Featured papers with journal logos, graphical abstracts, and direct links
+- **Project Portfolio** - SciTrace platform, research projects, and hobby projects with filtering
+- **Recent Updates** - Timeline of current work, code releases, and research progress
+- **Professional Contact** - Institution details, location, and social media integration
+
+### 💻 Interactive Elements
+- **Typing Animation** - Dynamic text cycling through professional identities and research focus
+- **Smooth Scrolling** - Seamless navigation with custom easing between sections
 - **Hover Effects** - Interactive cards and buttons with smooth transitions
-- **Parallax Background** - Dynamic hero section with floating molecular patterns
-- **Mobile Navigation** - Hamburger menu for mobile devices
-- **Theme Toggle** - Horizontal switch with sun/moon icons for theme switching
+- **Video Background** - MP4 video with fallback for immersive hero section
+- **Mobile Navigation** - Responsive hamburger menu for mobile devices
+- **Theme Toggle** - Animated switch with sun/moon icons and swipe transitions
 
-### 🔬 Research Showcase
-- **Technical Skills Cards** - 8 comprehensive skill areas including data stewardship, FAIR principles, and analytical chemistry
-- **Publications Section** - Featured papers with journal logos, direct links, and graphical abstracts
-- **Experience Timeline** - Academic journey with achievements and skills (updated date format)
-- **SciTrace Project** - Dedicated section for the research data management platform
-- **📰 Updates Section** - Recent activities, published code projects, and current work
-- **GitHub Integration** - Direct links to published repositories and projects
-
-### 📱 Contact & Interaction
-- **Contact Form** - Functional form with validation and notifications
-- **Social Links** - LinkedIn, GitHub, and Instagram integration
-- **Email Copy** - One-click email copying to clipboard
-- **Professional Contact Cards** - Institution and location information
+### 📊 Data & Research Integration
+- **GitHub Integration** - Direct links to published repositories and research code
+- **Research Data Management** - SciTrace platform showcase with interactive mockup
+- **Publication Links** - Direct access to papers in Water Research, Environmental Science: Nano, ACS
+- **Code Releases** - Featured repositories for DOM-Drivers, NP_SRFA_Ratio, and SciTrace
+- **Contact Form** - Functional form with validation and professional contact information
 
 ## 🛠️ Technologies Used
 
-### Frontend
-- **HTML5** - Semantic markup and accessibility
+### Core Technologies
+- **HTML5** - Semantic markup with accessibility features
 - **CSS3** - Modern styling with CSS Grid, Flexbox, and custom properties
+- **Vanilla JavaScript (ES6+)** - No frameworks, pure JavaScript for optimal performance
 - **CSS Glassmorphism** - Backdrop-filter blur effects and translucent materials
-- **JavaScript (ES6+)** - Interactive features and animations
-- **Font Awesome** - Professional icons throughout the interface
 
-### Design & Typography
-- **Google Fonts** - Inter, Source Serif Pro, JetBrains Mono
-- **CSS Variables** - Consistent theming and easy customization
-- **CSS Animations** - Smooth transitions and micro-interactions
-- **Responsive Design** - Mobile-first approach with breakpoints
-- **Glassmorphism Effects** - Backdrop-filter blur with translucent materials
+### Design System
+- **macOS 26 Sequoia Color Palette** - System-inspired color scheme with light/dark variants
+- **Google Fonts** - SF Pro Display, SF Pro Text, SF Mono, Inter for typography
+- **Font Awesome 6.4.2** - Professional icon library
+- **CSS Custom Properties** - Dynamic theming with CSS variables
+- **Responsive Design** - Mobile-first approach with breakpoints at 768px, 1200px
 
-### Features
-- **Intersection Observer API** - Scroll-triggered animations
-- **Clipboard API** - Email copying functionality
-- **Form Validation** - Client-side form validation
-- **Smooth Scrolling** - Native CSS scroll-behavior
-- **Theme Management** - System preference detection and localStorage persistence
-- **Responsive Images** - Optimized graphical abstracts with proper sizing
+### Advanced Features
+- **Theme Management** - System preference detection with localStorage persistence
+- **Intersection Observer API** - Scroll-triggered animations and lazy loading
+- **Clipboard API** - One-click email copying functionality
+- **Smooth Scrolling** - Native CSS scroll-behavior with custom easing
+- **Form Validation** - Client-side validation with user feedback
+- **Video Background** - MP4 video with fallback for hero section
+- **Typing Animation** - Dynamic text cycling through professional identities
 
 ## 📁 Project Structure
 
 ```
 MichelGad.github.io/
-├── index.html              # Main website file
-├── README.md               # Project documentation
-├── favicon.svg             # Custom SVG favicon
+├── index.html                    # Main website file with semantic HTML structure
+├── README.md                     # Comprehensive project documentation
+├── LICENSE                       # Apache License 2.0
+├── favicon.svg                   # Custom SVG favicon with environmental theme
 └── assets/
     ├── css/
-    │   └── style.css       # Main stylesheet with dark/light theme support
+    │   └── style.css             # Main stylesheet (3,400+ lines)
+    │                             # - macOS 26 Sequoia design system
+    │                             # - Dark/light theme support
+    │                             # - Glassmorphism effects
+    │                             # - Responsive breakpoints
     ├── js/
-    │   └── main.js         # JavaScript functionality including theme management
+    │   └── main.js               # JavaScript functionality (580+ lines)
+    │                             # - Theme management with localStorage
+    │                             # - Typing animation system
+    │                             # - Smooth scrolling and interactions
+    │                             # - Form validation and clipboard API
     └── images/
-        ├── portrait.jpg     # Profile photo
-        ├── logo-water-research.png
-        ├── logo-acs.jpeg
-        ├── logo-rsc-nano.png
-        ├── logo-ufz.jpeg
-        ├── logo-uni-siegen.jpeg
-        ├── graphical-abstract-dom.png
-        ├── graphical-abstract-nano.png
-        └── graphical-abstract-bioimaging.png
+        ├── portrait.jpg          # Professional profile photo
+        ├── water-research-background.mp4  # Hero section video background
+        ├── scitrace-logo.png     # SciTrace project logo
+        ├── logo-water-research.png        # Water Research journal logo
+        ├── logo-acs.jpeg                  # ACS Applied Bio Materials logo
+        ├── logo-rsc-nano.png              # Environmental Science: Nano logo
+        ├── logo-ufz.jpeg                 # UFZ institution logo
+        ├── logo-uni-siegen.jpeg          # University of Siegen logo
+        ├── graphical-abstract-dom.png     # DOM composition research visual
+        ├── graphical-abstract-nano.png   # TiO₂ nanoparticles research visual
+        └── graphical-abstract-bioimaging.png  # Bioimaging research visual
 ```
+
+### File Descriptions
+
+#### Core Files
+- **`index.html`** - Single-page application with semantic HTML5 structure
+- **`style.css`** - Comprehensive stylesheet with CSS custom properties for theming
+- **`main.js`** - Vanilla JavaScript with modern ES6+ features and APIs
+
+#### Visual Assets
+- **Profile & Branding**: Professional portrait and SciTrace logo
+- **Journal Logos**: High-quality logos for academic publications
+- **Research Visuals**: Graphical abstracts for featured publications
+- **Background Media**: Video background with fallback for hero section
+
+#### Key Features
+- **No Build Process** - Pure HTML, CSS, and JavaScript
+- **Responsive Design** - Mobile-first approach with CSS Grid and Flexbox
+- **Theme System** - CSS custom properties with light/dark mode support
+- **Performance Optimized** - Minimal dependencies and optimized assets
 
 ## 🚀 Getting Started
 
 ### Prerequisites
-- A modern web browser (Chrome, Firefox, Safari, Edge)
-- No build tools or dependencies required
+- A modern web browser (Chrome 60+, Firefox 55+, Safari 12+, Edge 79+)
+- No build tools, dependencies, or server setup required
+- Git (optional, for cloning the repository)
 
-### Installation
-1. Clone or download the repository
-2. Open `index.html` in your web browser
-3. The website is ready to use!
+### Quick Start
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/MichelGad/MichelGad.github.io.git
+   cd MichelGad.github.io
+   ```
 
-### Local Development
-For local development, you can use any simple HTTP server:
+2. **Open the website:**
+   - Simply open `index.html` in your web browser
+   - Or use a local server for development (recommended)
+
+### Local Development Server
+
+For the best experience during development, use a local HTTP server:
 
 ```bash
-# Using Python 3
+# Option 1: Python 3 (recommended)
 python3 -m http.server 8000
 
-# Using Node.js (if you have http-server installed)
-npx http-server
+# Option 2: Node.js with http-server
+npx http-server -p 8000
 
-# Using PHP
+# Option 3: PHP
 php -S localhost:8000
+
+# Option 4: Live Server (VS Code extension)
+# Right-click index.html → "Open with Live Server"
 ```
 
 Then visit `http://localhost:8000` in your browser.
+
+### GitHub Pages Deployment
+This repository is automatically deployed to GitHub Pages at `https://michelgad.github.io`. Any changes pushed to the `main` branch will be automatically deployed.
 
 ## 🎯 Key Sections
 
@@ -168,50 +216,81 @@ Then visit `http://localhost:8000` in your browser.
 
 ## 🎨 Customization
 
-### Colors & Themes
-The website uses CSS custom properties for easy theming with comprehensive dark/light mode support:
+### Theme Customization
+The website uses CSS custom properties for easy theming. All colors are defined in `assets/css/style.css`:
 
-**Light Theme:**
+**Light Theme Colors:**
 ```css
 :root {
-    --primary-color: #1e40af;      /* Deep blue */
-    --secondary-color: #0ea5e9;    /* Sky blue */
-    --accent-color: #06b6d4;       /* Cyan */
-    --water-blue: #0c4a6e;        /* Ocean blue */
-    --ocean-deep: #0f172a;         /* Dark blue */
-    --sky-light: #e0f2fe;         /* Light blue */
-    --text-dark: #1e293b;         /* Dark text */
-    --text-white: #ffffff;        /* White text */
-    --bg-white: #ffffff;          /* White background */
+    --blue: #007AFF;              /* Primary blue */
+    --blue-light: #5AC8FA;        /* Light blue */
+    --blue-dark: #0051D5;         /* Dark blue */
+    --system-blue: #007AFF;       /* System blue */
+    --text-primary: #1d1d1f;      /* Primary text */
+    --text-secondary: #86868b;    /* Secondary text */
+    --bg-primary: #ffffff;        /* Primary background */
+    --bg-secondary: #f5f5f7;      /* Secondary background */
 }
 ```
 
-**Dark Theme:**
+**Dark Theme Colors:**
 ```css
 [data-theme="dark"] {
-    --primary-color: #60a5fa;      /* Light blue */
-    --secondary-color: #38bdf8;    /* Cyan blue */
-    --accent-color: #22d3ee;       /* Bright cyan */
-    --text-dark: #f1f5f9;         /* Light text */
-    --text-white: #ffffff;        /* White text */
-    --bg-white: #0f172a;          /* Dark background */
-    --card-bg: rgba(30, 41, 59, 0.95); /* Dark card background */
+    --blue: #0A84FF;               /* Primary blue (dark) */
+    --blue-light: #64D2FF;        /* Light blue (dark) */
+    --text-primary: #f5f5f7;      /* Primary text (dark) */
+    --text-secondary: #a1a1a6;    /* Secondary text (dark) */
+    --bg-primary: #1c1c1e;        /* Primary background (dark) */
+    --bg-secondary: #2c2c2e;      /* Secondary background (dark) */
 }
 ```
 
-### Typography
-- **Headings**: Source Serif Pro (serif)
-- **Body Text**: Inter (sans-serif)
-- **Code/Monospace**: JetBrains Mono
+### Typography System
+- **Headings**: SF Pro Display (system font)
+- **Body Text**: SF Pro Text / Inter (fallback)
+- **Code/Monospace**: SF Mono / JetBrains Mono (fallback)
 
-### Content Updates
-- **Profile Information**: Update `index.html` with new details
-- **Publications**: Add new papers to the publications section with graphical abstracts
-- **Research Focus**: Modify research cards to reflect current work
-- **Experience**: Update timeline with new positions or achievements
-- **Updates Section**: Add new activities, code releases, and project updates
-- **Institution Logos**: Add new logo files to `assets/images/` directory
-- **Theme Customization**: Modify CSS variables to change color schemes
+### Content Customization
+
+#### 1. Personal Information
+Update the following sections in `index.html`:
+- **Hero Section**: Name, title, description, and profile image
+- **Contact Information**: Email, institution, location
+- **Social Links**: LinkedIn, GitHub, Instagram URLs
+
+#### 2. Research & Publications
+- **Publications**: Add new papers with journal logos and graphical abstracts
+- **Research Updates**: Update the timeline with recent activities
+- **Technical Skills**: Modify skill cards to reflect current expertise
+- **Experience Timeline**: Add new positions and achievements
+
+#### 3. Projects
+- **SciTrace Project**: Update project description and features
+- **Research Projects**: Add new repositories and descriptions
+- **Hobby Projects**: Include personal projects and interests
+
+#### 4. Visual Assets
+- **Profile Image**: Replace `assets/images/portrait.jpg`
+- **Journal Logos**: Add new logos to `assets/images/`
+- **Graphical Abstracts**: Update publication images
+- **Background Video**: Replace `assets/images/water-research-background.mp4`
+
+### Advanced Customization
+
+#### Color Scheme Changes
+1. **Modify CSS Variables**: Update colors in `assets/css/style.css`
+2. **Test Both Themes**: Ensure changes work in both light and dark modes
+3. **Maintain Contrast**: Follow WCAG guidelines for accessibility
+
+#### Typography Updates
+1. **Font Changes**: Update Google Fonts links in `index.html`
+2. **Font Variables**: Modify font-family properties in CSS
+3. **Responsive Typography**: Adjust font sizes for different breakpoints
+
+#### Layout Modifications
+1. **Section Order**: Reorder sections in `index.html`
+2. **Grid Layouts**: Modify CSS Grid properties for different layouts
+3. **Responsive Breakpoints**: Adjust breakpoints in CSS media queries
 
 ## 📱 Responsive Design
 
@@ -254,6 +333,47 @@ The website is fully responsive with breakpoints at:
 - ✅ **Contact Integration** - Functional form, social links, email copy
 - ✅ **GitHub Integration** - Direct links to repositories and projects
 
+## ⚡ Performance & Optimization
+
+### Performance Features
+- **Vanilla JavaScript** - No framework overhead, fast loading times
+- **Optimized Images** - Compressed images with proper sizing
+- **CSS Grid & Flexbox** - Efficient layout rendering
+- **Lazy Loading** - Images and content load as needed
+- **Minimal Dependencies** - Only essential external resources
+
+### Browser Support
+- **Chrome** 60+ (full support)
+- **Firefox** 55+ (full support)
+- **Safari** 12+ (full support)
+- **Edge** 79+ (full support)
+- **Mobile Browsers** - iOS Safari 12+, Chrome Mobile 60+
+
+### Accessibility
+- **Semantic HTML** - Proper heading structure and landmarks
+- **ARIA Labels** - Screen reader support for interactive elements
+- **Keyboard Navigation** - Full keyboard accessibility
+- **Color Contrast** - WCAG AA compliant color schemes
+- **Focus Indicators** - Clear focus states for navigation
+
+## 🤝 Contributing
+
+This is a personal academic portfolio, but suggestions and improvements are welcome:
+
+1. **Fork the repository**
+2. **Create a feature branch**: `git checkout -b feature/improvement`
+3. **Make your changes** and test thoroughly
+4. **Commit your changes**: `git commit -m 'Add improvement'`
+5. **Push to the branch**: `git push origin feature/improvement`
+6. **Open a Pull Request**
+
 ## 📄 License
 
 This project is open source and available under the Apache License 2.0.
+
+## 🙏 Acknowledgments
+
+- **macOS Design System** - Inspired by Apple's design language
+- **Environmental Chemistry Community** - Research and collaboration
+- **Open Source Community** - Font Awesome, Google Fonts, and web standards
+- **Academic Mentors** - Guidance and support throughout research journey
