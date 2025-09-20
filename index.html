@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michel Gad</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="apple-touch-icon" href="/favicon.svg">
+    
+    <!-- macOS 26 Glass UI Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@100;200;300;400;500;600;700;800;900&family=SF+Pro+Text:wght@100;200;300;400;500;600;700;800;900&family=SF+Mono:wght@400;500;600;700&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar">
+    <div class="container">
+        <div class="nav-content">
+            <div class="nav-brand">
+                <span class="brand-text">Michel Gad</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#updates">Updates</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+                    <div class="toggle-track">
+                        <div class="toggle-thumb">
+                            <i class="fas fa-sun" id="theme-icon"></i>
+                        </div>
+                    </div>
+                </button>
+                <div class="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section id="home" class="hero">
+    <div class="hero-background">
+        <video class="hero-video" autoplay muted playsinline>
+            <source src="assets/images/water-research-background.mp4" type="video/mp4">
+            <!-- Fallback to GIF if video not available -->
+            <div class="hero-background-image"></div>
+        </video>
+        <div class="molecular-pattern"></div>
+        <div class="water-ripple"></div>
+    </div>
+    <div class="container">
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="hero-badge">
+                    <i class="fas fa-flask"></i>
+                    <span>Ph.D. Candidate</span>
+                </div>
+                <h1 class="hero-title">
+                    <span class="gradient-text">Michel Gad</span>
+                </h1>
+                <div class="typing-animation">
+                    <div class="typing-text" id="typing-text"></div>
+                </div>
+        <p class="hero-description">
+            Investigating the fate and behavior of nanoparticles in aquatic environments through advanced analytical techniques and machine learning approaches. Developing SciTrace, an innovative research data management platform for scientists.
+        </p>
+                <div class="hero-actions">
+                    <a href="#skills" class="btn btn-primary">
+                        <i class="fas fa-microscope"></i>
+                        View Skills
+                    </a>
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="fas fa-project-diagram"></i>
+                        SciTrace
+                    </a>
+                    <a href="#contact" class="btn btn-outline">
+                        <i class="fas fa-envelope"></i>
+                        Get in Touch
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="profile-container">
+                    <img src="assets/images/portrait.jpg" alt="Michel Gad" class="profile-image">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Scroll Arrow -->
+    <div class="scroll-arrow">
+        <div class="arrow-container">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills" class="section skills-section">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Technical Skills</h2>
+        </div>
+        
+        <div class="skills-grid">
+            <div class="skill-card glass-hover">
+                <div class="card-icon">
+                    <i class="fab fa-python"></i>
+                </div>
+                <h3>Programming & Data Science</h3>
+                <p>Scripting and software development with <strong>Python</strong> and <strong>R</strong> for research software engineering, data science, and environmental analysis. Python: <strong>NumPy</strong>, <strong>pandas</strong>, <strong>scikit-learn</strong>, <strong>matplotlib</strong>, <strong>seaborn</strong>, <strong>plotly</strong>. R: <strong>ggplot2</strong>, <strong>dplyr</strong>, <strong>tidyverse</strong>. Experience with continuous integration, unit testing, and debugging.</p>
+                <div class="card-tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">R</span>
+                    <span class="tag">Data Science</span>
+                </div>
+            </div>
+            
+            <div class="skill-card glass-hover">
+                <div class="card-icon">
+                    <i class="fas fa-database"></i>
+                </div>
+                <h3>Research Data Management</h3>
+                <p>Expertise in <strong>FAIR</strong> data principles, data lifecycle management, and developing comprehensive data management plans (DMPs). Experience with <strong>DataLad</strong>, metadata standards, and creating tools like <strong>SciTrace</strong> for scientific workflows and data provenance tracking.</p>
+                <div class="card-tags">
+                    <span class="tag">DataLad</span>
+                    <span class="tag">FAIR</span>
+                    <span class="tag">DMPs</span>
+                </div>
+            </div>
+            
+            <div class="skill-card glass-hover">
+                <div class="card-icon">
+                    <i class="fas fa-flask"></i>
+                </div>
+                <h3>Environmental Data Analysis</h3>
+                <p>Specialized experience in analyzing large-scale <strong>environmental datasets</strong>, particularly <strong>dissolved organic matter (DOM)</strong> data from aquatic environments. Expertise in mass spectrometry data processing, environmental monitoring data analysis, and data integration for interdisciplinary environmental research.</p>
+                <div class="card-tags">
+                    <span class="tag">DOM Analysis</span>
+                    <span class="tag">Mass Spectrometry</span>
+                    <span class="tag">Environmental Data</span>
+                </div>
+            </div>
+            
+            <div class="skill-card glass-hover">
+                <div class="card-icon">
+                    <i class="fas fa-brain"></i>
+                </div>
+                <h3>Machine Learning & Analytics</h3>
+                <p>Developing predictive models using <strong>Random Forest</strong>, <strong>XGBoost</strong>, and multivariate analysis for environmental data interpretation. Advanced data visualization with <strong>ggplot2</strong>, <strong>matplotlib</strong>, <strong>seaborn</strong>, and <strong>plotly</strong> for scientific data presentation and analysis.</p>
+                <div class="card-tags">
+                    <span class="tag">Random Forest</span>
+                    <span class="tag">XGBoost</span>
+                    <span class="tag">Visualization</span>
+                </div>
+            </div>
+            
+            <div class="skill-card glass-hover">
+                <div class="card-icon">
+                    <i class="fas fa-flask"></i>
+                </div>
+                <h3>Analytical Chemistry</h3>
+                <p>Advanced mass spectrometry techniques including <strong>FT-ICR MS</strong>, <strong>spICP-MS</strong>, <strong>LA-ICP-MS</strong>, <strong>LC-MS</strong>, and <strong>LDI-MS</strong> for environmental analysis and nanoparticle characterization. Experience with analytical data processing and interpretation.</p>
+                <div class="card-tags">
+                    <span class="tag">FT-ICR MS</span>
+                    <span class="tag">spICP-MS</span>
+                    <span class="tag">LC-MS</span>
+                </div>
+            </div>
+            
+            <div class="skill-card glass-hover">
+                <div class="card-icon">
+                    <i class="fas fa-server"></i>
+                </div>
+                <h3>High Performance Computing</h3>
+                <p>Experience with <strong>HPC clusters</strong>, parallel processing, and large-scale data analysis for environmental research applications. Expertise in job scheduling, resource optimization, and handling terabyte-scale datasets for interdisciplinary research.</p>
+                <div class="card-tags">
+                    <span class="tag">HPC</span>
+                    <span class="tag">Parallel Processing</span>
+                    <span class="tag">Big Data</span>
+                </div>
+            </div>
+            
+            <div class="skill-card glass-hover">
+                <div class="card-icon">
+                    <i class="fab fa-git-alt"></i>
+                </div>
+                <h3>Version Control & Collaboration</h3>
+                <p>Version control and workflow management with <strong>Git</strong>, <strong>GitHub</strong>, and <strong>GitLab</strong>. Experience with collaborative development, maintaining reproducible research workflows, and implementing best practices for open science and research transparency.</p>
+                <div class="card-tags">
+                    <span class="tag">Git</span>
+                    <span class="tag">GitHub</span>
+                    <span class="tag">Reproducibility</span>
+                </div>
+            </div>
+            
+            <div class="skill-card glass-hover">
+                <div class="card-icon">
+                    <i class="fas fa-cogs"></i>
+                </div>
+                <h3>Reproducible Science & Open Research</h3>
+                <p>Share fully reproducible digital research objects (data, code, results, software, provenance) at terabyte scale. Implementing best practices for open science, research transparency, and developing tools for data lineage tracking and scientific workflow management.</p>
+                <div class="card-tags">
+                    <span class="tag">Open Science</span>
+                    <span class="tag">Provenance</span>
+                    <span class="tag">SciTrace</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Updates Section -->
+<section id="updates" class="section updates-section">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Recent Updates</h2>
+        </div>
+        
+        <div class="updates-timeline">
+            <div class="update-item">
+                <div class="update-date">
+                    <span class="date-day">20</span>
+                    <span class="date-month">Sep</span>
+                    <span class="date-year">2025</span>
+                </div>
+                <div class="update-content">
+                    <h3>Second PhD Manuscript in Progress</h3>
+                    <p>Currently finalizing the second manuscript of my PhD thesis on "Capabilities, Limitations, and Optimization Strategies of using LDI-FT-ICR MS for DOM Corona Characterization on Nanoparticles". This comprehensive study explores the analytical potential and challenges of Laser Desorption/Ionization Fourier Transform Ion Cyclotron Resonance Mass Spectrometry for characterizing dissolved organic matter corona formation on nanoparticles.</p>
+                    <div class="update-tags">
+                        <span class="tag">PhD Research</span>
+                        <span class="tag">Manuscript</span>
+                        <span class="tag">LDI-FT-ICR MS</span>
+                        <span class="tag">ES&T</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="update-item">
+                <div class="update-date">
+                    <span class="date-day">15</span>
+                    <span class="date-month">Sep</span>
+                    <span class="date-year">2025</span>
+                </div>
+                <div class="update-content">
+                    <h3>Published Code: NP_SRFA_Ratio Analysis Pipeline</h3>
+                    <p>Released the complete R-based pipeline for analyzing molecular formula patterns in Suwannee River Fulvic Acid (SRFA) samples and comparing them across gold nanoparticles (AuNP) and P25 TiO₂ nanoparticles. This reproducible computational framework includes data preprocessing, group-wise aggregation, intensity-weighted averages, and publication-ready visualizations including Van Krevelen diagrams.</p>
+                    <div class="update-tags">
+                        <span class="tag">Code Release</span>
+                        <span class="tag">R Pipeline</span>
+                        <span class="tag">Nanoparticles</span>
+                        <span class="tag">ES&T</span>
+                    </div>
+                    <div class="update-links">
+                        <a href="https://github.com/MichelGad/NP_SRFA_Ratio" target="_blank" class="btn btn-primary">
+                            <i class="fab fa-github"></i>
+                            View Repository
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="update-item">
+                <div class="update-date">
+                    <span class="date-day">15</span>
+                    <span class="date-month">Sep</span>
+                    <span class="date-year">2025</span>
+                </div>
+                <div class="update-content">
+                    <h3>Published Code: DOM-Drivers Analysis</h3>
+                    <p>Released the computational code for the DOM composition analysis published in Water Research. This repository contains the machine learning models and analytical workflows used to identify environmental drivers of dissolved organic matter composition across central European aquatic systems using FT-ICR MS data.</p>
+                    <div class="update-tags">
+                        <span class="tag">Code Release</span>
+                        <span class="tag">Machine Learning</span>
+                        <span class="tag">DOM Analysis</span>
+                        <span class="tag">Water Research</span>
+                    </div>
+                    <div class="update-links">
+                        <a href="https://github.com/MichelGad/DOM-Drivers" target="_blank" class="btn btn-primary">
+                            <i class="fab fa-github"></i>
+                            View Repository
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="update-item">
+                <div class="update-date">
+                    <span class="date-day">11</span>
+                    <span class="date-month">Sep</span>
+                    <span class="date-year">2025</span>
+                </div>
+                <div class="update-content">
+                    <h3>SciTrace v0.1.0 Release</h3>
+                    <p>Successfully completed and published the first version of SciTrace v0.1.0, research data management platform. This initial release includes core data lineage tracking, seamless code execution, and interactive visualizations for research workflows.</p>
+                    <div class="update-tags">
+                        <span class="tag">Release</span>
+                        <span class="tag">SciTrace</span>
+                        <span class="tag">Data Management</span>
+                        <span class="tag">v0.1.0</span>
+                    </div>
+                    <div class="update-links">
+                        <a href="https://github.com/MichelGad/SciTrace" target="_blank" class="btn btn-primary">
+                            <i class="fab fa-github"></i>
+                            View SciTrace
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Publications -->
+<section id="publications" class="section publications-section">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Publications</h2>
+            </div>
+
+        <div class="publications-grid">
+            <div class="publication-card featured">
+                <div class="publication-upper">
+                    <div class="graphical-abstract">
+                        <img src="assets/images/graphical-abstract-dom.png" alt="Graphical Abstract - DOM Composition" class="graphical-abstract-image">
+                    </div>
+                </div>
+                <div class="publication-lower">
+                    <div class="publication-header">
+                        <div class="journal-info">
+                            <img src="assets/images/logo-water-research.png" alt="Water Research" class="journal-logo">
+                            <div class="journal-details">
+                                <h3>Environmental drivers of dissolved organic matter composition across central European aquatic systems</h3>
+                                <p class="journal-name">Water Research</p>
+                                <p class="publication-year">2025</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="publication-abstract">
+                        Novel correlation-based machine learning model integrating FT-ICR MS data to predict DOM composition and identify key environmental drivers.
+                    </p>
+                    <div class="publication-keywords">
+                        <span class="keyword">Dissolved Organic Matter</span>
+                        <span class="keyword">FT-ICR MS</span>
+                        <span class="keyword">Machine Learning</span>
+                        <span class="keyword">Environmental Drivers</span>
+                    </div>
+                    <div class="publication-links">
+                        <a href="https://www.sciencedirect.com/science/article/pii/S0043135424019183?via%3Dihub" target="_blank" class="btn btn-primary">
+                            <i class="fas fa-external-link-alt"></i>
+                            Read Paper
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="publication-card featured">
+                <div class="publication-upper">
+                    <div class="graphical-abstract">
+                        <img src="assets/images/graphical-abstract-nano.png" alt="Graphical Abstract - TiO₂ Nanoparticles" class="graphical-abstract-image">
+                    </div>
+                </div>
+                <div class="publication-lower">
+                    <div class="publication-header">
+                        <div class="journal-info">
+                            <img src="assets/images/logo-rsc-nano.png" alt="Environmental Science: Nano" class="journal-logo">
+                            <div class="journal-details">
+                                <h3>Measuring and predicting the ζ-potential of anthropogenic TiO₂-nanoparticles in surface waters</h3>
+                                <p class="journal-name">Environmental Science: Nano</p>
+                                <p class="publication-year">2025</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="publication-abstract">
+                        Novel approach for determining and predicting the ζ-potential of nanoparticles in surface waters using XGBoost models and in-situ exposure methods.
+                    </p>
+                    <div class="publication-keywords">
+                        <span class="keyword">TiO₂ Nanoparticles</span>
+                        <span class="keyword">ζ-potential</span>
+                        <span class="keyword">XGBoost</span>
+                        <span class="keyword">Surface Waters</span>
+                    </div>
+                    <div class="publication-links">
+                        <a href="https://pubs.rsc.org/en/Content/ArticleLanding/2025/EN/D5EN00248F" target="_blank" class="btn btn-primary">
+                            <i class="fas fa-external-link-alt"></i>
+                            Read Paper
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="publication-card">
+                <div class="publication-upper">
+                    <div class="graphical-abstract">
+                        <img src="assets/images/graphical-abstract-bioimaging.png" alt="Graphical Abstract - Bioimaging" class="graphical-abstract-image">
+                    </div>
+                </div>
+                <div class="publication-lower">
+                    <div class="publication-header">
+                        <div class="journal-info">
+                            <img src="assets/images/logo-acs.jpeg" alt="ACS Applied Bio Materials" class="journal-logo">
+                            <div class="journal-details">
+                                <h3>Imaging Keratan Sulfate in Ocular Tissue Sections by Immunofluorescence Microscopy and LA-ICP-MS</h3>
+                                <p class="journal-name">ACS Applied Bio Materials</p>
+                                <p class="publication-year">2022</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="publication-abstract">
+                        Advanced bioimaging workflow using immunofluorescence microscopy and LA-ICP-MS for spatial resolution of biomolecules.
+                    </p>
+                    <div class="publication-keywords">
+                        <span class="keyword">Bioimaging</span>
+                        <span class="keyword">LA-ICP-MS</span>
+                        <span class="keyword">Tissue Analysis</span>
+                    </div>
+                    <div class="publication-links">
+                        <a href="https://pubs.acs.org/doi/10.1021/acsabm.1c01240" target="_blank" class="btn btn-primary">
+                            <i class="fas fa-external-link-alt"></i>
+                            Read Paper
+                        </a>
+                    </div>
+                </div>
+            </div>
+                    </div>
+    </div>
+</section>
+
+<!-- Experience Timeline -->
+<section id="experience" class="section experience-section">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Research & Data Stewardship Experience</h2>
+        </div>
+        
+        <div class="roadmap-timeline">
+            <div class="roadmap-item">
+                <div class="roadmap-marker">
+                    <div class="roadmap-dot"></div>
+                </div>
+                <div class="roadmap-content">
+                    <h3>Ph.D. Candidate in Environmental Chemistry</h3>
+                    <h4>Helmholtz Centre for Environmental Research (UFZ)</h4>
+                    <p class="roadmap-dates">Feb 2022 - Present, Leipzig, Germany</p>
+                    <p>Leading interdisciplinary research on nanoparticle behavior in aquatic environments using advanced mass spectrometry and machine learning approaches. Developing comprehensive data management strategies, implementing FAIR data principles, and creating reproducible workflows for large-scale environmental research data.</p>
+                    <div class="roadmap-highlights">
+                        <div class="highlight">
+                            <i class="fas fa-check"></i>
+                            <span>Developed novel multivariate random forest models for DOM prediction</span>
+                        </div>
+                        <div class="highlight">
+                            <i class="fas fa-check"></i>
+                            <span>Implemented FAIR data principles and comprehensive data management plans (DMPs)</span>
+                        </div>
+                        <div class="highlight">
+                            <i class="fas fa-check"></i>
+                            <span>Deployed workflows on HPC cluster for large-scale environmental data analysis and stewardship</span>
+                        </div>
+                        <div class="highlight">
+                            <i class="fas fa-check"></i>
+                            <span>Created SciTrace platform for research data lineage tracking and interdisciplinary data management</span>
+                        </div>
+                        <div class="highlight">
+                            <i class="fas fa-check"></i>
+                            <span>Established data quality control and standardization protocols for environmental datasets</span>
+                        </div>
+                    </div>
+                    <div class="roadmap-skills">
+                        <p>Technical Skills:</p>
+                        <div class="skills-container">
+                            <span class="skill-tag">Data Stewardship</span>
+                            <span class="skill-tag">FAIR Principles</span>
+                            <span class="skill-tag">Data Management</span>
+                            <span class="skill-tag">HPC</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="roadmap-item">
+                <div class="roadmap-marker">
+                    <div class="roadmap-dot"></div>
+                </div>
+                <div class="roadmap-content">
+                    <h3>Student Research Assistant</h3>
+                    <h4>Siegen University</h4>
+                    <p class="roadmap-dates">Jun 2021 - Feb 2022, Siegen, Germany</p>
+                    <p>Research collaboration on spICP‑MS signal processing and data analysis for nanoparticle characterization and particle‑event detection.</p>
+                    <div class="roadmap-highlights">
+                        <div class="highlight">
+                            <i class="fas fa-check"></i>
+                            <span>Developed short‑time FFT noise‑reduction algorithms for robust particle‑event extraction</span>
+                        </div>
+                        <div class="highlight">
+                            <i class="fas fa-check"></i>
+                            <span>Implemented Poisson‑influenced K‑means clustering for particle sizing</span>
+                        </div>
+                        <div class="highlight">
+                            <i class="fas fa-check"></i>
+                            <span>Built automated data pipeline (SQL + Python) and Power BI dashboards</span>
+                        </div>
+                    </div>
+                    <div class="roadmap-skills">
+                        <p>Technical Skills:</p>
+                        <div class="skills-container">
+                            <span class="skill-tag">spICP-MS</span>
+                            <span class="skill-tag">Python & SQL</span>
+                            <span class="skill-tag">Power BI</span>
+                            <span class="skill-tag">K-means Clustering</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="roadmap-item">
+                <div class="roadmap-marker">
+                    <div class="roadmap-dot"></div>
+                </div>
+                <div class="roadmap-content">
+                    <h3>Student Research Assistant</h3>
+                    <h4>Federal Institute for Materials Research and Testing (BAM)</h4>
+                    <p class="roadmap-dates">Aug 2020 - Feb 2021, Berlin, Germany</p>
+                    <p>Collaborative research with Charité applying advanced tissue imaging for early cancer detection and biomarker analysis.</p>
+                    <div class="roadmap-highlights">
+                        <div class="highlight">
+                            <i class="fas fa-check"></i>
+                            <span>Performed bioimaging using LA-ICP-MS</span>
+                        </div>
+                        <div class="highlight">
+                            <i class="fas fa-check"></i>
+                            <span>Managed high-resolution tissue imaging data</span>
+                        </div>
+                    </div>
+                    <div class="roadmap-skills">
+                        <p>Technical Skills:</p>
+                        <div class="skills-container">
+                            <span class="skill-tag">LA-ICP-MS</span>
+                            <span class="skill-tag">Bioimaging</span>
+                            <span class="skill-tag">Data Processing</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="section projects-section">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Projects</h2>
+        </div>
+        
+        <div class="project-filters">
+            <button class="filter-btn active" data-filter="scitrace">SciTrace</button>
+            <button class="filter-btn" data-filter="research">Research</button>
+            <button class="filter-btn" data-filter="hobbies">Hobbies</button>
+        </div>
+        
+        <div class="projects-content">
+            <!-- SciTrace Project -->
+            <div class="project-category active" id="scitrace-content">
+                <div class="project-showcase">
+                    <div class="project-info">
+                <div class="project-badge">
+                    <i class="fas fa-project-diagram"></i>
+                    <span>Research Data Management</span>
+                </div>
+                <h3 class="project-title">
+                    <img src="assets/images/scitrace-logo.png" alt="SciTrace" class="project-logo">
+                    <div class="title-text">
+                        <div class="title-line-1">SciTrace</div>
+                        <div class="title-line-2">Research Data Lineage Platform</div>
+                    </div>
+                </h3>
+                <p class="project-description">
+                    A comprehensive research data stewardship platform that integrates with DataLad functionalities and adds interactive visualizations for the complete data lifecycle. SciTrace helps researchers implement FAIR data principles, track data transformations, execute code seamlessly, and maintain complete trails of their research data workflows for interdisciplinary collaboration.
+                </p>
+                
+                <div class="project-features">
+                    <div class="feature">
+                        <i class="fas fa-code-branch"></i>
+                        <div>
+                            <h4>Data Lineage Tracking</h4>
+                            <p>Complete traceability of data transformations and processing steps</p>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-play-circle"></i>
+                        <div>
+                            <h4>Seamless Code Execution</h4>
+                            <p>Integrated code execution within the data management workflow</p>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-chart-line"></i>
+                        <div>
+                            <h4>Interactive Visualizations</h4>
+                            <p>Visual representation of data flows and dependencies</p>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-shield-alt"></i>
+                        <div>
+                            <h4>FAIR Data Principles</h4>
+                            <p>Ensures Findable, Accessible, Interoperable, and Reusable data</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-tech">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">DataLad</span>
+                    <span class="tech-tag">FAIR Data</span>
+                    <span class="tech-tag">Data Stewardship</span>
+                    <span class="tech-tag">Interdisciplinary</span>
+                </div>
+                
+                <div class="project-links">
+                    <a href="https://github.com/MichelGad/SciTrace" target="_blank" class="btn btn-primary">
+                        <i class="fab fa-github"></i>
+                        View on GitHub
+                    </a>
+                </div>
+            </div>
+            
+                    <div class="project-visual">
+                <div class="project-mockup">
+                    <div class="mockup-header">
+                        <div class="mockup-dots">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="mockup-title">
+                            <img src="assets/images/scitrace-logo.png" alt="SciTrace" class="mockup-logo">
+                            SciTrace
+                        </div>
+                    </div>
+                    <div class="mockup-content">
+                        <div class="data-flow">
+                            <div class="flow-node">
+                                <i class="fas fa-database"></i>
+                                <span>Raw Data</span>
+                            </div>
+                            <div class="flow-arrow">→</div>
+                            <div class="flow-node">
+                                <i class="fas fa-cogs"></i>
+                                <span>Processing</span>
+                            </div>
+                            <div class="flow-arrow">→</div>
+                            <div class="flow-node">
+                                <i class="fas fa-chart-bar"></i>
+                                <span>Results</span>
+                            </div>
+                        </div>
+                        <div class="lineage-trace">
+                            <div class="trace-item">
+                                <span class="trace-time">10:30</span>
+                                <span class="trace-action">Data imported</span>
+                            </div>
+                            <div class="trace-item">
+                                <span class="trace-time">10:35</span>
+                                <span class="trace-action">Preprocessing applied</span>
+                            </div>
+                            <div class="trace-item">
+                                <span class="trace-time">10:40</span>
+                                <span class="trace-action">Analysis completed</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+            
+            <!-- Research Projects -->
+            <div class="project-category" id="research-content">
+                <div class="projects-split">
+                    <!-- DOM-Drivers Project -->
+                    <div class="project-window">
+                        <div class="project-info">
+                            <div class="project-badge">
+                                <i class="fas fa-flask"></i>
+                                <span>Environmental Research</span>
+            </div>
+                            <h3>DOM-Drivers</h3>
+                            <p class="project-description">
+                                Research project analyzing dissolved organic matter drivers in aquatic environments. Developed machine learning models for DOM prediction using multivariate random forest approaches to understand complex environmental processes.
+                            </p>
+                            
+                            <div class="project-features">
+                                <div class="feature">
+                                    <i class="fas fa-microscope"></i>
+                                    <div>
+                                        <h4>Advanced Analytics</h4>
+                                        <p>FT-ICR MS data analysis and characterization</p>
+                                    </div>
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-brain"></i>
+                                    <div>
+                                        <h4>Machine Learning</h4>
+                                        <p>Multivariate random forest models for prediction</p>
+                                    </div>
+                        </div>
+                    </div>
+
+                            <div class="project-tech">
+                                <span class="tech-tag">R & Python</span>
+                                <span class="tech-tag">Machine Learning</span>
+                                <span class="tech-tag">Environmental Science</span>
+                </div>
+                            
+                            <div class="project-links">
+                                <a href="https://github.com/MichelGad/DOM-Drivers" class="btn btn-primary" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                    View on GitHub
+                    </a>
+                </div>
+            </div>
+            
+                    </div>
+
+                    <!-- NP_SRFA_Ratio Project -->
+                    <div class="project-window">
+                        <div class="project-info">
+                            <div class="project-badge">
+                                <i class="fas fa-flask"></i>
+                                <span>Environmental Research</span>
+                </div>
+                            <h3>NP_SRFA_Ratio</h3>
+                            <p class="project-description">
+                                Analysis pipeline for nanoparticle and Suwannee River Fulvic Acid ratio studies. Code for the second manuscript of PhD research, preparing for submission to Environmental Science & Technology.
+                            </p>
+                            
+                            <div class="project-features">
+                                <div class="feature">
+                                    <i class="fas fa-cogs"></i>
+                                    <div>
+                                        <h4>Data Pipeline</h4>
+                                        <p>Automated analysis workflow for nanoparticle studies</p>
+                </div>
+            </div>
+                                <div class="feature">
+                                    <i class="fas fa-chart-line"></i>
+                                    <div>
+                                        <h4>Statistical Analysis</h4>
+                                        <p>Advanced ratio calculations and statistical modeling</p>
+                                    </div>
+                        </div>
+                    </div>
+
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Data Pipeline</span>
+                                <span class="tech-tag">Research</span>
+                </div>
+                            
+                            <div class="project-links">
+                                <a href="https://github.com/MichelGad/NP_SRFA_Ratio" class="btn btn-primary" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                    View on GitHub
+                    </a>
+                </div>
+            </div>
+
+                    </div>
+                </div>
+                    </div>
+
+            <!-- Hobby Projects -->
+            <div class="project-category" id="hobbies-content">
+                <div class="projects-split">
+                    <!-- FootyFrame Project -->
+                    <div class="project-window">
+                        <div class="project-info">
+                            <div class="project-badge">
+                                <i class="fas fa-futbol"></i>
+                                <span>Sports Analytics</span>
+                        </div>
+                            <h3>FootyFrame</h3>
+                            <p class="project-description">
+                                Football analytics and visualization tool for analyzing match data and player performance. Personal project combining passion for football with data science skills to provide comprehensive insights into team dynamics and individual player metrics.
+                            </p>
+                            
+                            <div class="project-features">
+                                <div class="feature">
+                                    <i class="fas fa-chart-pie"></i>
+                                    <div>
+                                        <h4>Performance Analytics</h4>
+                                        <p>Comprehensive player and team statistics</p>
+                        </div>
+                    </div>
+                                <div class="feature">
+                                    <i class="fas fa-palette"></i>
+                                    <div>
+                                        <h4>Data Visualization</h4>
+                                        <p>Interactive plots and match analysis charts</p>
+                    </div>
+                </div>
+            </div>
+
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Data Visualization</span>
+                                <span class="tech-tag">Sports Analytics</span>
+                </div>
+                            
+                            <div class="project-links">
+                                <a href="https://github.com/MichelGad/FootyFrame" class="btn btn-primary" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                    View on GitHub
+                                </a>
+                    </div>
+                        </div>
+                        
+                    </div>
+                    
+                    <!-- xG-Vision Project -->
+                    <div class="project-window">
+                        <div class="project-info">
+                            <div class="project-badge">
+                                <i class="fas fa-futbol"></i>
+                                <span>Sports Analytics</span>
+                            </div>
+                            <h3>xG-Vision</h3>
+                            <p class="project-description">
+                                Expected Goals (xG) analysis and visualization platform for football statistics. Advanced metrics and visualizations for understanding team and player performance through sophisticated probability models and statistical analysis.
+                            </p>
+                            
+                            <div class="project-features">
+                                <div class="feature">
+                                    <i class="fas fa-eye"></i>
+                                    <div>
+                                        <h4>Expected Goals (xG)</h4>
+                                        <p>Advanced probability models for goal prediction</p>
+                                    </div>
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-trophy"></i>
+                                    <div>
+                                        <h4>Match Insights</h4>
+                                        <p>Real-time analysis and performance tracking</p>
+                    </div>
+                </div>
+            </div>
+
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Statistics</span>
+                                <span class="tech-tag">Football Analytics</span>
+                </div>
+                            
+                            <div class="project-links">
+                                <a href="https://github.com/MichelGad/xG-Vision" class="btn btn-primary" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                    View on GitHub
+                                </a>
+                    </div>
+                        </div>
+                        
+            </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="section contact-section">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Get in Touch</h2>
+        </div>
+        
+        <div class="contact-content">
+            <div class="contact-info">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h3>Email</h3>
+                        <p>michel.gad@outlook.com</p>
+                    </div>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h3>Institution</h3>
+                        <p>Helmholtz Centre for Environmental Research (UFZ)</p>
+                    </div>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h3>Location</h3>
+                        <p>Leipzig, Germany</p>
+                    </div>
+                </div>
+                
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/MichelGad" target="_blank" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/MichelGad" target="_blank" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://instagram.com/Michel1Gad" target="_blank" class="social-link">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="contact-form-container">
+                <form class="contact-form">
+            <div class="form-group">
+                <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i>
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-info">
+                <p>&copy; 2025 Michel Gad. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>
