@@ -283,24 +283,24 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Contact form handling with Formspree
+    // Contact form handling with mailto
     const contactForm = document.getElementById('contact-form');
     if (contactForm) {
         contactForm.addEventListener('submit', function(e) {
-            // Let Formspree handle the submission, just show loading state
+            // Let the browser handle the mailto action
+            // Just show loading state briefly
             const submitBtn = this.querySelector('button[type="submit"]');
             const originalText = submitBtn.innerHTML;
             
-            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Opening email client...';
             submitBtn.disabled = true;
             
-            // Show success message after form submission
+            // Show success message
             setTimeout(() => {
-                showNotification('Message sent successfully! I\'ll get back to you soon.', 'success');
-                this.reset();
+                showNotification('Your email client should open with the message pre-filled. Please send the email to complete the process.', 'success');
                 submitBtn.innerHTML = originalText;
                 submitBtn.disabled = false;
-            }, 2000);
+            }, 1000);
         });
     }
 
