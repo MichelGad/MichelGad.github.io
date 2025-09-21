@@ -35,7 +35,7 @@ Visit the live portfolio at: **[michelgad.github.io](https://michelgad.github.io
 - **Project Portfolio** - SciTrace platform, research projects, and football projects with filtering
 - **Recent Updates** - Timeline of current work including second PhD manuscript and published code releases
 - **Football** - FootyFrame and xG-Vision sports analytics platforms
-- **Professional Contact** - Institution details, location, and social media integration
+- **Professional Contact** - Email, phone, location, and comprehensive social media integration
 
 ### 💻 Interactive Elements
 - **Typing Animation** - Dynamic text cycling through professional identities and research focus
@@ -50,7 +50,8 @@ Visit the live portfolio at: **[michelgad.github.io](https://michelgad.github.io
 - **Research Data Management** - SciTrace platform showcase with interactive mockup
 - **Publication Links** - Direct access to papers in Water Research, Environmental Science: Nano, ACS
 - **Code Releases** - Featured repositories for DOM-Drivers, NP_SRFA_Ratio, and SciTrace
-- **Contact Form** - Functional form with validation and professional contact information
+- **Interactive Google Maps** - UFZ location with theme-aware styling and office details
+- **Comprehensive Contact Info** - Email, phone, office location, and professional social profiles
 
 ## 🛠️ Technologies Used
 
@@ -72,7 +73,8 @@ Visit the live portfolio at: **[michelgad.github.io](https://michelgad.github.io
 - **Intersection Observer API** - Scroll-triggered animations and lazy loading
 - **Clipboard API** - One-click email copying functionality
 - **Smooth Scrolling** - Native CSS scroll-behavior with custom easing
-- **Form Validation** - Client-side validation with user feedback
+- **Google Maps Integration** - Interactive map with theme-aware styling and office location
+- **Contact Information** - Email, phone, office details, and professional social profiles
 - **Video Background** - MP4 video with fallback for hero section
 - **Typing Animation** - Dynamic text cycling through professional identities
 
@@ -263,8 +265,8 @@ The website uses CSS custom properties for easy theming. All colors are defined 
 #### 1. Personal Information
 Update the following sections in `index.html`:
 - **Hero Section**: Name, title, description, and profile image
-- **Contact Information**: Email, institution, location
-- **Social Links**: LinkedIn, GitHub, Instagram URLs
+- **Contact Information**: Email, phone, office location (Building 4.0, Room 410)
+- **Social Links**: LinkedIn, GitHub, ORCID, ResearchGate, Instagram URLs
 
 #### 2. Research & Publications
 - **Publications**: Add new papers with journal logos and graphical abstracts
@@ -342,7 +344,7 @@ The website is fully responsive with breakpoints at:
 - ✅ **Responsive Design** - Optimized for desktop, tablet, and mobile devices
 - ✅ **Interactive Elements** - Typing animation, smooth scrolling, hover effects
 - ✅ **Professional Typography** - Source Serif Pro, Inter, JetBrains Mono
-- ✅ **Contact Integration** - Functional form, social links, email copy
+- ✅ **Contact Integration** - Email, phone, office location, Google Maps, professional social profiles
 - ✅ **GitHub Integration** - Direct links to repositories and projects
 
 ## ⚡ Performance & Optimization

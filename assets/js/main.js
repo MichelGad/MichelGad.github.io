@@ -283,25 +283,54 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Contact form handling with mailto
-    const contactForm = document.getElementById('contact-form');
-    if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
-            // Let the browser handle the mailto action
-            // Just show loading state briefly
-            const submitBtn = this.querySelector('button[type="submit"]');
-            const originalText = submitBtn.innerHTML;
-            
-            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Opening email client...';
-            submitBtn.disabled = true;
-            
-            // Show success message
-            setTimeout(() => {
-                showNotification('Your email client should open with the message pre-filled. Please send the email to complete the process.', 'success');
-                submitBtn.innerHTML = originalText;
-                submitBtn.disabled = false;
-            }, 1000);
+    // Map interaction handling
+    const mapWrapper = document.querySelector('.map-wrapper');
+    const googleMap = document.getElementById('google-map');
+    
+    if (mapWrapper && googleMap) {
+        // Add click handler to open full map in new tab
+        mapWrapper.addEventListener('click', function() {
+            window.open('https://www.google.com/maps/place/Helmholtz+Centre+for+Environmental+Research+-+UFZ/@51.35247,12.43124,17z', '_blank');
         });
+        
+        // Add hover effect
+        mapWrapper.style.cursor = 'pointer';
+        mapWrapper.title = 'Click to open in Google Maps';
+        
+        // Function to update map theme
+        function updateMapTheme(theme) {
+            // UFZ Leipzig coordinates: 51.35247, 12.43124
+            const baseUrl = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2431.234567890123!2d12.43124!3d51.35247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a6f8a1b2c3d4e5%3A0x6f7g8h9i0j1k2l3m!2sHelmholtz%20Centre%20for%20Environmental%20Research%20-%20UFZ!5e0!3m2!1sen!2sde!4v1634567890123!5m2!1sen!2sde';
+            
+            if (theme === 'dark') {
+                // Dark theme map with custom styling
+                googleMap.src = baseUrl + '&style=feature:all|element:geometry|color:0x212121&style=feature:all|element:labels.text.fill|color:0x757575&style=feature:all|element:labels.text.stroke|color:0x212121&style=feature:all|element:geometry.fill|color:0x2b2b2b&style=feature:administrative|element:geometry|color:0x757575&style=feature:administrative.country|element:labels.text.fill|color:0x9e9e9e&style=feature:administrative.land_parcel|element:labels.text.fill|color:0xbdbdbd&style=feature:poi|element:labels.text.fill|color:0x757575&style=feature:poi.park|element:geometry|color:0x181818&style=feature:poi.park|element:labels.text.fill|color:0x616161&style=feature:poi.park|element:labels.text.stroke|color:0x1b1b1b&style=feature:road|element:geometry.fill|color:0x2c2c2c&style=feature:road|element:labels.text.fill|color:0x8a8a8a&style=feature:road.arterial|element:geometry|color:0x373737&style=feature:road.highway|element:geometry|color:0x3c3c3c&style=feature:road.highway.controlled_access|element:geometry|color:0x4e4e4e&style=feature:road.local|element:labels.text.fill|color:0x808080&style=feature:transit|element:labels.text.fill|color:0x757575&style=feature:water|element:geometry|color:0x000000&style=feature:water|element:labels.text.fill|color:0x3d3d3d';
+            } else {
+                // Light theme map (default)
+                googleMap.src = baseUrl;
+            }
+        }
+        
+        // Update map theme on theme change
+        function handleThemeChange() {
+            const currentTheme = html.getAttribute('data-theme');
+            updateMapTheme(currentTheme);
+        }
+        
+        // Listen for theme changes
+        const themeObserver = new MutationObserver(function(mutations) {
+            mutations.forEach(function(mutation) {
+                if (mutation.type === 'attributes' && mutation.attributeName === 'data-theme') {
+                    handleThemeChange();
+                }
+            });
+        });
+        
+        themeObserver.observe(html, { attributes: true, attributeFilter: ['data-theme'] });
+        
+        // Set initial theme
+        const initialTheme = html.getAttribute('data-theme');
+        updateMapTheme(initialTheme);
     }
 
     // Notification system
