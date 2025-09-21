@@ -32,8 +32,9 @@ Visit the live portfolio at: **[michelgad.github.io](https://michelgad.github.io
 - **Research Timeline** - Comprehensive academic journey with achievements and publications
 - **Technical Skills Showcase** - 8 detailed skill areas including data stewardship and FAIR principles
 - **Publications Gallery** - Featured papers with journal logos, graphical abstracts, and direct links
-- **Project Portfolio** - SciTrace platform, research projects, and hobby projects with filtering
-- **Recent Updates** - Timeline of current work, code releases, and research progress
+- **Project Portfolio** - SciTrace platform, research projects, and football projects with filtering
+- **Recent Updates** - Timeline of current work including second PhD manuscript and published code releases
+- **Football** - FootyFrame and xG-Vision sports analytics platforms
 - **Professional Contact** - Institution details, location, and social media integration
 
 ### 💻 Interactive Elements
@@ -128,6 +129,9 @@ MichelGad.github.io/
 - **Responsive Design** - Mobile-first approach with CSS Grid and Flexbox
 - **Theme System** - CSS custom properties with light/dark mode support
 - **Performance Optimized** - Minimal dependencies and optimized assets
+- **Interactive Project Showcases** - Detailed project descriptions with visual mockups
+- **Recent Updates Timeline** - Current research progress and code releases
+- **Football Integration** - Sports analytics platforms with interactive visualizations
 
 ## 🚀 Getting Started
 
@@ -190,10 +194,10 @@ This repository is automatically deployed to GitHub Pages at `https://michelgad.
 - **Reproducible Science & Open Research** - Open science and data lineage
 
 ### Updates Section
-- **Recent Activities** - Current work and project updates
-- **Published Code Projects** - NP_SRFA_Ratio and DOM-Drivers repositories
-- **SciTrace Releases** - Version updates and new features
-- **GitHub Integration** - Direct links to all published repositories
+- **Recent Activities** - Current work and project updates including second PhD manuscript on LDI-FT-ICR MS
+- **Published Code Projects** - NP_SRFA_Ratio and DOM-Drivers repositories with comprehensive analysis pipelines
+- **SciTrace Releases** - Version updates and new features for research data management
+- **GitHub Integration** - Direct links to all published repositories and code releases
 
 ### Publications
 - **Water Research** - Environmental drivers of DOM composition
@@ -210,9 +214,13 @@ This repository is automatically deployed to GitHub Pages at `https://michelgad.
 
 ### SciTrace Project
 - **Research Data Stewardship Platform** - Data lineage and workflow tracking with FAIR principles
-- **Interactive Mockup** - Visual representation of the platform
+- **Interactive Mockup** - Visual representation of the platform with data flow visualization
 - **Feature Highlights** - FAIR data principles, interdisciplinary collaboration, and data stewardship
-- **GitHub Integration** - Direct link to project repository
+- **GitHub Integration** - Direct link to project repository with v0.1.0 release
+
+### Football
+- **FootyFrame** - Professional football shot map analytics platform
+- **xG-Vision** - Advanced football video analysis
 
 ## 🎨 Customization
 
@@ -265,9 +273,9 @@ Update the following sections in `index.html`:
 - **Experience Timeline**: Add new positions and achievements
 
 #### 3. Projects
-- **SciTrace Project**: Update project description and features
-- **Research Projects**: Add new repositories and descriptions
-- **Hobby Projects**: Include personal projects and interests
+- **SciTrace Project**: Update project description and features with v0.1.0 release
+- **Research Projects**: Add new repositories and descriptions including DOM-Drivers and NP_SRFA_Ratio
+- **Football**: Include personal projects like FootyFrame and xG-Vision sports analytics platforms
 
 #### 4. Visual Assets
 - **Profile Image**: Replace `assets/images/portrait.jpg`
@@ -324,6 +332,10 @@ The website is fully responsive with breakpoints at:
 - ✅ **High Performance Computing** - HPC clusters and large-scale data analysis
 - ✅ **Version Control & Collaboration** - Git, GitHub, and reproducible workflows
 - ✅ **Reproducible Science** - Open science and data lineage tracking
+- ✅ **Recent Updates Timeline** - Current PhD manuscript progress and published code releases
+- ✅ **Football** - FootyFrame and xG-Vision sports analytics platforms
+- ✅ **Published Code Repositories** - DOM-Drivers and NP_SRFA_Ratio analysis pipelines
+- ✅ **LDI-FT-ICR MS Research** - Advanced mass spectrometry for nanoparticle characterization
 - ✅ **macOS 26 Liquid Glass UI** - Translucent materials with dynamic adaptation
 - ✅ **Glassmorphism Effects** - Frosted glass backgrounds with backdrop-filter blur
 - ✅ **Dark/Light Theme** - Automatic system preference detection with manual toggle

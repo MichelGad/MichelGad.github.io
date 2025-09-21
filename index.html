@@ -573,154 +573,173 @@
         <div class="project-filters">
             <button class="filter-btn active" data-filter="scitrace">SciTrace</button>
             <button class="filter-btn" data-filter="research">Research</button>
-            <button class="filter-btn" data-filter="hobbies">Hobbies</button>
+            <button class="filter-btn" data-filter="football">Football</button>
         </div>
         
         <div class="projects-content">
             <!-- SciTrace Project -->
             <div class="project-category active" id="scitrace-content">
-                <div class="project-showcase">
-                    <div class="project-info">
-                <div class="project-badge">
-                    <i class="fas fa-project-diagram"></i>
-                    <span>Research Data Management</span>
-                </div>
-                <h3 class="project-title">
-                    <img src="assets/images/scitrace-logo.png" alt="SciTrace" class="project-logo">
-                    <div class="title-text">
-                        <div class="title-line-1">SciTrace</div>
-                        <div class="title-line-2">Research Data Lineage Platform</div>
-                    </div>
-                </h3>
-                <p class="project-description">
-                    A comprehensive research data stewardship platform that integrates with DataLad functionalities and adds interactive visualizations for the complete data lifecycle. SciTrace helps researchers implement FAIR data principles, track data transformations, execute code seamlessly, and maintain complete trails of their research data workflows for interdisciplinary collaboration.
-                </p>
-                
-                <div class="project-features">
-                    <div class="feature">
-                        <i class="fas fa-code-branch"></i>
-                        <div>
-                            <h4>Data Lineage Tracking</h4>
-                            <p>Complete traceability of data transformations and processing steps</p>
+                <div class="projects-vertical">
+                    <div class="project-showcase">
+                        <div class="project-info">
+                            <h3 class="project-title">SciTrace</h3>
+                            <p class="project-description">
+                                A comprehensive research data stewardship platform that integrates with DataLad functionalities and adds interactive visualizations for the complete data lifecycle. SciTrace helps researchers implement FAIR data principles, track data transformations, execute code seamlessly, and maintain complete trails of their research data workflows for interdisciplinary collaboration.
+                            </p>
+                            
+                            <div class="project-features">
+                                <div class="feature">
+                                    <i class="fas fa-code-branch"></i>
+                                    <div>
+                                        <h4>Data Lineage Tracking</h4>
+                                        <p>Complete traceability of data transformations and processing steps</p>
+                                    </div>
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-play-circle"></i>
+                                    <div>
+                                        <h4>Seamless Code Execution</h4>
+                                        <p>Integrated code execution within the data management workflow</p>
+                                    </div>
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-chart-line"></i>
+                                    <div>
+                                        <h4>Interactive Visualizations</h4>
+                                        <p>Visual representation of data flows and dependencies</p>
+                                    </div>
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-shield-alt"></i>
+                                    <div>
+                                        <h4>FAIR Data Principles</h4>
+                                        <p>Ensures Findable, Accessible, Interoperable, and Reusable data</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">DataLad</span>
+                                <span class="tech-tag">FAIR Data</span>
+                                <span class="tech-tag">Data Stewardship</span>
+                                <span class="tech-tag">Interdisciplinary</span>
+                            </div>
+                            
+                            <div class="project-links">
+                                <a href="https://github.com/MichelGad/SciTrace" target="_blank" class="btn btn-primary">
+                                    <i class="fab fa-github"></i>
+                                    View on GitHub
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="project-visual">
+                            <div class="project-mockup">
+                                <div class="mockup-header">
+                                    <div class="mockup-dots">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                    <div class="mockup-title">
+                                        <img src="assets/images/scitrace-logo.png" alt="SciTrace" class="mockup-logo">
+                                        SciTrace
+                                    </div>
+                                </div>
+                                <div class="mockup-content">
+                                    <div class="data-flow">
+                                        <div class="flow-node">
+                                            <i class="fas fa-database"></i>
+                                            <span>Raw Data</span>
+                                        </div>
+                                        <div class="flow-arrow">→</div>
+                                        <div class="flow-node">
+                                            <i class="fas fa-cogs"></i>
+                                            <span>Processing</span>
+                                        </div>
+                                        <div class="flow-arrow">→</div>
+                                        <div class="flow-node">
+                                            <i class="fas fa-chart-bar"></i>
+                                            <span>Results</span>
+                                        </div>
+                                        <div class="flow-arrow">→</div>
+                                        <div class="flow-node">
+                                            <i class="fas fa-share-alt"></i>
+                                            <span>Export</span>
+                                        </div>
+                                    </div>
+                                    <div class="lineage-trace">
+                                        <div class="trace-item">
+                                            <span class="trace-time">10:30</span>
+                                            <span class="trace-action">Data imported from DataLad</span>
+                                        </div>
+                                        <div class="trace-item">
+                                            <span class="trace-time">10:32</span>
+                                            <span class="trace-action">Metadata validation</span>
+                                        </div>
+                                        <div class="trace-item">
+                                            <span class="trace-time">10:35</span>
+                                            <span class="trace-action">Preprocessing pipeline</span>
+                                        </div>
+                                        <div class="trace-item">
+                                            <span class="trace-time">10:38</span>
+                                            <span class="trace-action">Quality control checks</span>
+                                        </div>
+                                        <div class="trace-item">
+                                            <span class="trace-time">10:40</span>
+                                            <span class="trace-action">Analysis completed</span>
+                                        </div>
+                                        <div class="trace-item">
+                                            <span class="trace-time">10:42</span>
+                                            <span class="trace-action">Results exported</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="feature">
-                        <i class="fas fa-play-circle"></i>
-                        <div>
-                            <h4>Seamless Code Execution</h4>
-                            <p>Integrated code execution within the data management workflow</p>
-                        </div>
-                    </div>
-                    <div class="feature">
-                        <i class="fas fa-chart-line"></i>
-                        <div>
-                            <h4>Interactive Visualizations</h4>
-                            <p>Visual representation of data flows and dependencies</p>
-                        </div>
-                    </div>
-                    <div class="feature">
-                        <i class="fas fa-shield-alt"></i>
-                        <div>
-                            <h4>FAIR Data Principles</h4>
-                            <p>Ensures Findable, Accessible, Interoperable, and Reusable data</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="project-tech">
-                    <span class="tech-tag">Python</span>
-                    <span class="tech-tag">DataLad</span>
-                    <span class="tech-tag">FAIR Data</span>
-                    <span class="tech-tag">Data Stewardship</span>
-                    <span class="tech-tag">Interdisciplinary</span>
-                </div>
-                
-                <div class="project-links">
-                    <a href="https://github.com/MichelGad/SciTrace" target="_blank" class="btn btn-primary">
-                        <i class="fab fa-github"></i>
-                        View on GitHub
-                    </a>
                 </div>
             </div>
-            
-                    <div class="project-visual">
-                <div class="project-mockup">
-                    <div class="mockup-header">
-                        <div class="mockup-dots">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-                        <div class="mockup-title">
-                            <img src="assets/images/scitrace-logo.png" alt="SciTrace" class="mockup-logo">
-                            SciTrace
-                        </div>
-                    </div>
-                    <div class="mockup-content">
-                        <div class="data-flow">
-                            <div class="flow-node">
-                                <i class="fas fa-database"></i>
-                                <span>Raw Data</span>
-                            </div>
-                            <div class="flow-arrow">→</div>
-                            <div class="flow-node">
-                                <i class="fas fa-cogs"></i>
-                                <span>Processing</span>
-                            </div>
-                            <div class="flow-arrow">→</div>
-                            <div class="flow-node">
-                                <i class="fas fa-chart-bar"></i>
-                                <span>Results</span>
-                            </div>
-                        </div>
-                        <div class="lineage-trace">
-                            <div class="trace-item">
-                                <span class="trace-time">10:30</span>
-                                <span class="trace-action">Data imported</span>
-                            </div>
-                            <div class="trace-item">
-                                <span class="trace-time">10:35</span>
-                                <span class="trace-action">Preprocessing applied</span>
-                            </div>
-                            <div class="trace-item">
-                                <span class="trace-time">10:40</span>
-                                <span class="trace-action">Analysis completed</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
             
             <!-- Research Projects -->
             <div class="project-category" id="research-content">
-                <div class="projects-split">
+                <div class="projects-vertical">
                     <!-- DOM-Drivers Project -->
-                    <div class="project-window">
+                    <div class="project-showcase">
                         <div class="project-info">
-                            <div class="project-badge">
-                                <i class="fas fa-flask"></i>
-                                <span>Environmental Research</span>
-            </div>
-                            <h3>DOM-Drivers</h3>
+                            <h3 class="project-title">DOM-Drivers</h3>
                             <p class="project-description">
-                                Research project analyzing dissolved organic matter drivers in aquatic environments. Developed machine learning models for DOM prediction using multivariate random forest approaches to understand complex environmental processes.
+                                Comprehensive machine learning framework for predicting dissolved organic matter (DOM) composition across central European aquatic systems. This research project integrates high-resolution FT-ICR MS data with environmental variables to develop predictive models identifying key drivers of DOM composition. The framework implements multivariate random forest algorithms, correlation-based feature selection, and advanced statistical validation methods to achieve robust predictions of molecular formula patterns and environmental drivers.
                             </p>
                             
                             <div class="project-features">
                                 <div class="feature">
                                     <i class="fas fa-microscope"></i>
                                     <div>
-                                        <h4>Advanced Analytics</h4>
-                                        <p>FT-ICR MS data analysis and characterization</p>
+                                        <h4>FT-ICR MS Data Processing</h4>
+                                        <p>High-resolution mass spectrometry data analysis with molecular formula assignment and peak identification algorithms</p>
                                     </div>
                                 </div>
                                 <div class="feature">
                                     <i class="fas fa-brain"></i>
                                     <div>
-                                        <h4>Machine Learning</h4>
-                                        <p>Multivariate random forest models for prediction</p>
+                                        <h4>Machine Learning Pipeline</h4>
+                                        <p>Multivariate random forest models with correlation-based feature selection and cross-validation</p>
+                                    </div>
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-chart-line"></i>
+                                    <div>
+                                        <h4>Environmental Analytics</h4>
+                                        <p>Integration of 15+ environmental variables including land use, climate, and water chemistry parameters</p>
+                                    </div>
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-database"></i>
+                                    <div>
+                                        <h4>Data Stewardship</h4>
+                                        <p>FAIR data principles implementation with comprehensive metadata and reproducible workflows</p>
                                     </div>
                         </div>
                     </div>
@@ -728,94 +747,258 @@
                             <div class="project-tech">
                                 <span class="tech-tag">R & Python</span>
                                 <span class="tech-tag">Machine Learning</span>
+                                <span class="tech-tag">FT-ICR MS</span>
                                 <span class="tech-tag">Environmental Science</span>
-                </div>
+                                <span class="tech-tag">Data Stewardship</span>
+                            </div>
                             
                             <div class="project-links">
-                                <a href="https://github.com/MichelGad/DOM-Drivers" class="btn btn-primary" target="_blank">
+                                <a href="https://github.com/MichelGad/DOM-Drivers" target="_blank" class="btn btn-primary">
                                     <i class="fab fa-github"></i>
                                     View on GitHub
-                    </a>
-                </div>
-            </div>
-            
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="project-visual">
+                            <div class="project-mockup">
+                                <div class="mockup-header">
+                                    <div class="mockup-dots">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                    <div class="mockup-title">
+                                        <i class="fas fa-flask"></i>
+                                        DOM-Drivers Analysis
+                                    </div>
+                                </div>
+                                <div class="mockup-content">
+                                    <div class="analytical-diagram">
+                                        <!-- Left Side: Correlation Coefficients -->
+                                        <div class="diagram-section correlation-section">
+                                            <div class="section-header">
+                                                <div class="header-box correlation-header">
+                                                    <span>Correlation coefficients</span>
+                                                </div>
+                                            </div>
+                                            <div class="correlation-flow">
+                                                <div class="correlation-box env-factors">
+                                                    <span>Environmental Factors</span>
+                                                </div>
+                                                <div class="correlation-arrow cyclical-arrow">
+                                                    <i class="fas fa-sync-alt"></i>
+                                                </div>
+                                                <div class="correlation-box peak-intensity">
+                                                    <span>Peak Intensity</span>
+                                                </div>
+                                            </div>
+                                            <div class="correlation-output">
+                                                <div class="probability-box correlation-probability">
+                                                    <span>ρ(Environmental)</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Right Side: Multi-variant Machine Learning -->
+                                        <div class="diagram-section ml-section">
+                                            <div class="section-header">
+                                                <div class="header-box ml-header">
+                                                    <span>Multi-variant Random Forest</span>
+                                                </div>
+                                            </div>
+                                            <div class="ml-descriptors">
+                                                <div class="descriptors-box">
+                                                    <span>DOM Molecular Descriptors</span>
+                                                </div>
+                                            </div>
+                                            <div class="ml-flow">
+                                                <div class="ml-processing">
+                                                    <div class="processing-circle">
+                                                        <span>MRF</span>
+                                                    </div>
+                                                    <div class="predict-arrow">
+                                                        <span>predict</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="ml-probability">
+                                                <div class="probability-box">
+                                                    <span>ρ(Environmental)</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                     <!-- NP_SRFA_Ratio Project -->
-                    <div class="project-window">
+                    <div class="project-showcase">
                         <div class="project-info">
-                            <div class="project-badge">
-                                <i class="fas fa-flask"></i>
-                                <span>Environmental Research</span>
-                </div>
-                            <h3>NP_SRFA_Ratio</h3>
+                            <h3 class="project-title">NP_SRFA_Ratio</h3>
                             <p class="project-description">
-                                Analysis pipeline for nanoparticle and Suwannee River Fulvic Acid ratio studies. Code for the second manuscript of PhD research, preparing for submission to Environmental Science & Technology.
+                                Comprehensive R-based analysis pipeline for investigating molecular formula patterns in Suwannee River Fulvic Acid (SRFA) samples and their interactions with gold nanoparticles (AuNP) and P25 TiO₂ nanoparticles. This advanced computational framework implements intensity-weighted aggregation, group-wise statistical analysis, and publication-ready visualizations including Van Krevelen diagrams.
                             </p>
                             
                             <div class="project-features">
                                 <div class="feature">
                                     <i class="fas fa-cogs"></i>
                                     <div>
-                                        <h4>Data Pipeline</h4>
-                                        <p>Automated analysis workflow for nanoparticle studies</p>
+                                        <h4>Automated Data Pipeline</h4>
+                                        <p>End-to-end R workflow for mass spectrometry data processing and analysis</p>
                 </div>
             </div>
                                 <div class="feature">
                                     <i class="fas fa-chart-line"></i>
                                     <div>
-                                        <h4>Statistical Analysis</h4>
-                                        <p>Advanced ratio calculations and statistical modeling</p>
+                                        <h4>Statistical Modeling</h4>
+                                        <p>Intensity-weighted averages, group-wise aggregation, and advanced ratio calculations</p>
+                                    </div>
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-palette"></i>
+                                    <div>
+                                        <h4>Scientific Visualization</h4>
+                                        <p>Publication-ready Van Krevelen diagrams and molecular formula visualizations</p>
+                                    </div>
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-microscope"></i>
+                                    <div>
+                                        <h4>Nanoparticle Analysis</h4>
+                                        <p>Comparative analysis of AuNP and TiO₂ nanoparticle interactions with organic matter</p>
                                     </div>
                         </div>
                     </div>
 
                             <div class="project-tech">
-                                <span class="tech-tag">Python</span>
-                                <span class="tech-tag">Data Pipeline</span>
-                                <span class="tech-tag">Research</span>
-                </div>
+                                <span class="tech-tag">R</span>
+                                <span class="tech-tag">Mass Spectrometry</span>
+                                <span class="tech-tag">Statistical Analysis</span>
+                                <span class="tech-tag">Data Visualization</span>
+                                <span class="tech-tag">Reproducible Research</span>
+                            </div>
                             
                             <div class="project-links">
-                                <a href="https://github.com/MichelGad/NP_SRFA_Ratio" class="btn btn-primary" target="_blank">
+                                <a href="https://github.com/MichelGad/NP_SRFA_Ratio" target="_blank" class="btn btn-primary">
                                     <i class="fab fa-github"></i>
                                     View on GitHub
-                    </a>
-                </div>
-            </div>
-
-                    </div>
-                </div>
-                    </div>
-
-            <!-- Hobby Projects -->
-            <div class="project-category" id="hobbies-content">
-                <div class="projects-split">
-                    <!-- FootyFrame Project -->
-                    <div class="project-window">
-                        <div class="project-info">
-                            <div class="project-badge">
-                                <i class="fas fa-futbol"></i>
-                                <span>Sports Analytics</span>
+                                </a>
+                            </div>
                         </div>
-                            <h3>FootyFrame</h3>
+                        
+                        <div class="project-visual">
+                            <div class="project-mockup">
+                                <div class="mockup-header">
+                                    <div class="mockup-dots">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                    <div class="mockup-title">
+                                        <i class="fas fa-flask"></i>
+                                        NP-SRFA Analysis
+                                    </div>
+                                </div>
+                                <div class="mockup-content">
+                                    <div class="np-srfa-analysis-diagram">
+                                        <!-- Left Side: Data Processing Pipeline -->
+                                        <div class="diagram-section data-processing-section">
+                                            <div class="section-header">
+                                                <div class="header-box data-processing-header">
+                                                    <span>Data Processing Pipeline</span>
+                                                </div>
+                                            </div>
+                                            <div class="processing-flow">
+                                                <div class="processing-box raw-data">
+                                                    <i class="fas fa-database"></i>
+                                                    <span>Raw Data Collection</span>
+                                                </div>
+                                                <div class="processing-arrow">→</div>
+                                                <div class="processing-box preprocessing">
+                                                    <i class="fas fa-broom"></i>
+                                                    <span>Data Cleaning & Normalization</span>
+                                                </div>
+                                                <div class="processing-arrow">→</div>
+                                                <div class="processing-box feature-extraction">
+                                                    <i class="fas fa-search"></i>
+                                                    <span>Feature Extraction</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Right Side: NP-SRFA Ratio Analysis -->
+                                        <div class="diagram-section ratio-analysis-section">
+                                            <div class="section-header">
+                                                <div class="header-box ratio-analysis-header">
+                                                    <span>NP-SRFA Ratio Analysis</span>
+                                                </div>
+                                            </div>
+                                            <div class="ratio-flow">
+                                                <div class="ratio-box computation">
+                                                    <i class="fas fa-calculator"></i>
+                                                    <span>NP-SRFA Ratio Computation</span>
+                                                </div>
+                                                <div class="ratio-arrow">→</div>
+                                                <div class="ratio-box statistical">
+                                                    <i class="fas fa-chart-line"></i>
+                                                    <span>Statistical Analysis</span>
+                                                </div>
+                                                <div class="ratio-arrow">→</div>
+                                                <div class="ratio-box visualization">
+                                                    <i class="fas fa-chart-bar"></i>
+                                                    <span>Visualization & Reporting</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    </div>
+
+            <!-- Football Projects -->
+            <div class="project-category" id="football-content">
+                <div class="projects-vertical">
+                    <!-- FootyFrame Project -->
+                    <div class="project-showcase">
+                        <div class="project-info">
+                            <h3 class="project-title">FootyFrame</h3>
                             <p class="project-description">
-                                Football analytics and visualization tool for analyzing match data and player performance. Personal project combining passion for football with data science skills to provide comprehensive insights into team dynamics and individual player metrics.
+                                Professional football shot map analytics platform that visualizes player shooting patterns and performance metrics. This comprehensive tool displays shot locations, outcomes, and statistics on an interactive football pitch, providing coaches, analysts, and fans with detailed insights into player effectiveness and shooting tendencies.
                             </p>
                             
                             <div class="project-features">
                                 <div class="feature">
-                                    <i class="fas fa-chart-pie"></i>
+                                    <i class="fas fa-map-marked-alt"></i>
                                     <div>
-                                        <h4>Performance Analytics</h4>
-                                        <p>Comprehensive player and team statistics</p>
+                                        <h4>Shot Map Visualization</h4>
+                                        <p>Interactive football pitch with color-coded shot locations showing goals, on-target, off-target, and blocked shots</p>
                         </div>
                     </div>
                                 <div class="feature">
+                                    <i class="fas fa-chart-bar"></i>
+                                    <div>
+                                        <h4>Performance Statistics</h4>
+                                        <p>Comprehensive player metrics including total shots, goals, conversion rate, and expected goals (xG)</p>
+                                    </div>
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-futbol"></i>
+                                    <div>
+                                        <h4>Football Field Layout</h4>
+                                        <p>Accurate pitch representation with goal line, penalty area, six-yard box, and D-arc markings</p>
+                                    </div>
+                                </div>
+                                <div class="feature">
                                     <i class="fas fa-palette"></i>
                                     <div>
-                                        <h4>Data Visualization</h4>
-                                        <p>Interactive plots and match analysis charts</p>
+                                        <h4>Visual Analytics</h4>
+                                        <p>Color-coded shot outcomes with varying circle sizes representing shot quality and expected goals</p>
                     </div>
                 </div>
             </div>
@@ -824,43 +1007,196 @@
                                 <span class="tech-tag">Python</span>
                                 <span class="tech-tag">Data Visualization</span>
                                 <span class="tech-tag">Sports Analytics</span>
-                </div>
+                                <span class="tech-tag">Machine Learning</span>
+                                <span class="tech-tag">Statistical Analysis</span>
+                            </div>
                             
                             <div class="project-links">
-                                <a href="https://github.com/MichelGad/FootyFrame" class="btn btn-primary" target="_blank">
+                                <a href="https://github.com/MichelGad/FootyFrame" target="_blank" class="btn btn-primary">
                                     <i class="fab fa-github"></i>
                                     View on GitHub
                                 </a>
-                    </div>
+                            </div>
                         </div>
                         
+                        <div class="project-visual">
+                            <div class="project-mockup">
+                                <div class="mockup-header">
+                                    <div class="mockup-dots">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                    <div class="mockup-title">
+                                        <i class="fas fa-futbol"></i>
+                                        FootyFrame Analytics
+                                    </div>
+                                </div>
+                                <div class="mockup-content">
+                                    <div class="player-stats-interface">
+                                        
+                                        <!-- Football Pitch Shot Map -->
+                                        <div class="shot-map-container">
+                                            <div class="football-pitch">
+                                                <!-- Goal Line -->
+                                                <div class="goal-line"></div>
+                                                
+                                                <!-- Six Yard Box -->
+                                                <div class="six-yard-box"></div>
+                                                
+                                                <!-- Penalty Area -->
+                                                <div class="penalty-area"></div>
+                                                
+                                                <!-- Penalty Spot -->
+                                                <div class="penalty-spot"></div>
+                                                
+                                                <!-- D-arc -->
+                                                <div class="d-arc"></div>
+                                                
+                                                <!-- Center Spot -->
+                                                <div class="center-spot"></div>
+                                                
+                                                <!-- Corner Arcs -->
+                                                <div class="corner-arc-left"></div>
+                                                <div class="corner-arc-right"></div>
+                                                
+                                                <!-- Shot Circles -->
+                                                <div class="shot-circles">
+                                                    <!-- Goals (Green) - Very close range -->
+                                                    <div class="shot-circle goal large" style="top: 5%; left: 48%;"></div>
+                                                    <div class="shot-circle goal medium" style="top: 8%; left: 45%;"></div>
+                                                    <div class="shot-circle goal large" style="top: 6%; left: 52%;"></div>
+                                                    <div class="shot-circle goal small" style="top: 10%; left: 50%;"></div>
+                                                    
+                                                    <!-- On Target (Blue) - Inside penalty area -->
+                                                    <div class="shot-circle on-target medium" style="top: 12%; left: 47%;"></div>
+                                                    <div class="shot-circle on-target small" style="top: 15%; left: 50%;"></div>
+                                                    <div class="shot-circle on-target large" style="top: 18%; left: 44%;"></div>
+                                                    <div class="shot-circle on-target medium" style="top: 20%; left: 53%;"></div>
+                                                    <div class="shot-circle on-target small" style="top: 22%; left: 48%;"></div>
+                                                    <div class="shot-circle on-target medium" style="top: 25%; left: 46%;"></div>
+                                                    
+                                                    <!-- Off Target (Red) - Inside penalty area -->
+                                                    <div class="shot-circle off-target small" style="top: 14%; left: 42%;"></div>
+                                                    <div class="shot-circle off-target medium" style="top: 17%; left: 55%;"></div>
+                                                    <div class="shot-circle off-target small" style="top: 21%; left: 46%;"></div>
+                                                    <div class="shot-circle off-target medium" style="top: 24%; left: 51%;"></div>
+                                                    
+                                                    <!-- Blocked (Yellow) - Inside penalty area -->
+                                                    <div class="shot-circle blocked small" style="top: 11%; left: 49%;"></div>
+                                                    <div class="shot-circle blocked medium" style="top: 16%; left: 51%;"></div>
+                                                    <div class="shot-circle blocked small" style="top: 19%; left: 47%;"></div>
+                                                    
+                                                    <!-- Outside Box Shots -->
+                                                    <div class="shot-circle goal large" style="top: 30%; left: 48%;"></div>
+                                                    <div class="shot-circle on-target medium" style="top: 35%; left: 45%;"></div>
+                                                    <div class="shot-circle off-target small" style="top: 40%; left: 52%;"></div>
+                                                    <div class="shot-circle on-target large" style="top: 45%; left: 47%;"></div>
+                                                    <div class="shot-circle goal medium" style="top: 50%; left: 49%;"></div>
+                                                    <div class="shot-circle on-target small" style="top: 55%; left: 46%;"></div>
+                                                    
+                                                    <!-- Long Range Shots -->
+                                                    <div class="shot-circle off-target small" style="top: 60%; left: 50%;"></div>
+                                                    <div class="shot-circle on-target medium" style="top: 65%; left: 48%;"></div>
+                                                    <div class="shot-circle goal large" style="top: 70%; left: 46%;"></div>
+                                                    <div class="shot-circle off-target small" style="top: 75%; left: 52%;"></div>
+                                                    <div class="shot-circle on-target medium" style="top: 80%; left: 49%;"></div>
+                                                    
+                                                    <!-- Wide shots -->
+                                                    <div class="shot-circle on-target small" style="top: 25%; left: 30%;"></div>
+                                                    <div class="shot-circle off-target medium" style="top: 30%; left: 65%;"></div>
+                                                    <div class="shot-circle goal small" style="top: 35%; left: 32%;"></div>
+                                                    <div class="shot-circle on-target medium" style="top: 40%; left: 68%;"></div>
+                                                    <div class="shot-circle off-target small" style="top: 45%; left: 28%;"></div>
+                                                    
+                                                    <!-- Very wide shots -->
+                                                    <div class="shot-circle on-target small" style="top: 50%; left: 25%;"></div>
+                                                    <div class="shot-circle off-target medium" style="top: 55%; left: 70%;"></div>
+                                                    <div class="shot-circle goal small" style="top: 60%; left: 28%;"></div>
+                                        </div>
+                                        </div>
+                                        </div>
+                                        
+                                        <!-- Shot Map Legend -->
+                                        <div class="shot-map-legend">
+                                            <div class="legend-item">
+                                                <div class="legend-color goal"></div>
+                                                <span>Goal</span>
+                                        </div>
+                                            <div class="legend-item">
+                                                <div class="legend-color on-target"></div>
+                                                <span>On Target</span>
+                                    </div>
+                                            <div class="legend-item">
+                                                <div class="legend-color off-target"></div>
+                                                <span>Off Target</span>
+                                        </div>
+                                            <div class="legend-item">
+                                                <div class="legend-color blocked"></div>
+                                                <span>Blocked</span>
+                                        </div>
+                                        </div>
+                                        
+                                        <!-- Stats Summary -->
+                                        <div class="stats-summary">
+                                            <div class="summary-card">
+                                                <span class="summary-value">24</span>
+                                                <span class="summary-label">Total Shots</span>
+                                        </div>
+                                            <div class="summary-card">
+                                                <span class="summary-value">8</span>
+                                                <span class="summary-label">Goals</span>
+                                        </div>
+                                            <div class="summary-card">
+                                                <span class="summary-value">0.33</span>
+                                                <span class="summary-label">Conversion Rate</span>
+                                            </div>
+                                            <div class="summary-card">
+                                                <span class="summary-value">0.89</span>
+                                                <span class="summary-label">xG</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     
                     <!-- xG-Vision Project -->
-                    <div class="project-window">
+                    <div class="project-showcase">
                         <div class="project-info">
-                            <div class="project-badge">
-                                <i class="fas fa-futbol"></i>
-                                <span>Sports Analytics</span>
-                            </div>
-                            <h3>xG-Vision</h3>
+                            <h3 class="project-title">xG-Vision</h3>
                             <p class="project-description">
-                                Expected Goals (xG) analysis and visualization platform for football statistics. Advanced metrics and visualizations for understanding team and player performance through sophisticated probability models and statistical analysis.
+                                Advanced football video analysis platform that combines video playback with real-time expected goals (xG) calculations and shot analysis. This sophisticated tool provides interactive video controls, detailed shot breakdowns, and match timeline visualization to help coaches and analysts understand the quality and probability of scoring opportunities.
                             </p>
                             
                             <div class="project-features">
                                 <div class="feature">
-                                    <i class="fas fa-eye"></i>
+                                    <i class="fas fa-play"></i>
                                     <div>
-                                        <h4>Expected Goals (xG)</h4>
-                                        <p>Advanced probability models for goal prediction</p>
+                                        <h4>Video Analysis Interface</h4>
+                                        <p>Interactive video player with playback controls, progress tracking, and real-time xG overlay display</p>
                                     </div>
                                 </div>
                                 <div class="feature">
-                                    <i class="fas fa-trophy"></i>
+                                    <i class="fas fa-chart-line"></i>
                                     <div>
-                                        <h4>Match Insights</h4>
-                                        <p>Real-time analysis and performance tracking</p>
+                                        <h4>Shot Analysis Panel</h4>
+                                        <p>Detailed shot breakdowns including location, angle, distance, body part, and goal probability calculations</p>
+                                    </div>
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-clock"></i>
+                                    <div>
+                                        <h4>Match Timeline</h4>
+                                        <p>Chronological event tracking showing goals, shots, cards, and other key match moments with timestamps</p>
+                                    </div>
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-calculator"></i>
+                                    <div>
+                                        <h4>Expected Goals (xG)</h4>
+                                        <p>Real-time probability calculations displayed as overlay indicators on video playback for shot quality assessment</p>
                     </div>
                 </div>
             </div>
@@ -868,18 +1204,116 @@
                             <div class="project-tech">
                                 <span class="tech-tag">Python</span>
                                 <span class="tech-tag">Statistics</span>
-                                <span class="tech-tag">Football Analytics</span>
-                </div>
+                                <span class="tech-tag">Machine Learning</span>
+                                <span class="tech-tag">Probability Models</span>
+                                <span class="tech-tag">Data Visualization</span>
+                            </div>
                             
                             <div class="project-links">
-                                <a href="https://github.com/MichelGad/xG-Vision" class="btn btn-primary" target="_blank">
+                                <a href="https://github.com/MichelGad/xG-Vision" target="_blank" class="btn btn-primary">
                                     <i class="fab fa-github"></i>
                                     View on GitHub
                                 </a>
-                    </div>
+                            </div>
                         </div>
                         
+                        <div class="project-visual">
+                            <div class="project-mockup">
+                                <div class="mockup-header">
+                                    <div class="mockup-dots">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                    <div class="mockup-title">
+                                        <i class="fas fa-futbol"></i>
+                                        xG-Vision Analytics
+                                    </div>
+                                </div>
+                                <div class="mockup-content">
+                                    <div class="video-analysis-interface">
+                                        <!-- Video Player Section -->
+                                        <div class="video-section">
+                                            <div class="video-player">
+                                                <div class="video-controls">
+                                                    <i class="fas fa-play"></i>
+                                                    <div class="progress-bar">
+                                                        <div class="progress-fill"></div>
+                                        </div>
+                                                    <span class="time-display">2:34 / 4:12</span>
+                                        </div>
+                                                <div class="video-overlay">
+                                                    <div class="xG-indicator">
+                                                        <span class="xG-value">0.73</span>
+                                                        <span class="xG-label">Expected Goals</span>
+                                        </div>
+                                        </div>
+                                    </div>
+                                        </div>
+                                        
+                                        <!-- Analysis Panel -->
+                                        <div class="analysis-panel">
+                                            <div class="panel-header">
+                                                <span class="panel-title">Shot Analysis</span>
+                                                <div class="panel-tabs">
+                                                    <span class="tab active">xG</span>
+                                                    <span class="tab">Heat Map</span>
+                                                    <span class="tab">Player</span>
+                                        </div>
+                                        </div>
+                                            <div class="analysis-content">
+                                                <div class="shot-details">
+                                                    <div class="detail-row">
+                                                        <span class="label">Shot Location:</span>
+                                                        <span class="value">Inside Box</span>
+                                        </div>
+                                                    <div class="detail-row">
+                                                        <span class="label">Angle:</span>
+                                                        <span class="value">45°</span>
+                                        </div>
+                                                    <div class="detail-row">
+                                                        <span class="label">Distance:</span>
+                                                        <span class="value">8.2m</span>
+                                        </div>
+                                                    <div class="detail-row">
+                                                        <span class="label">Body Part:</span>
+                                                        <span class="value">Right Foot</span>
+                                    </div>
+                                </div>
+                                                <div class="probability-chart">
+                                                    <div class="chart-bar">
+                                                        <div class="bar-fill" style="width: 73%"></div>
+                                                        <span class="bar-label">Goal Probability</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                                        
+                                        <!-- Timeline Section -->
+                                        <div class="timeline-section">
+                                            <div class="timeline-header">
+                                                <span>Match Timeline</span>
             </div>
+                                            <div class="timeline-events">
+                                                <div class="timeline-event goal">
+                                                    <span class="time">23'</span>
+                                                    <span class="event">⚽ Goal</span>
+                                                </div>
+                                                <div class="timeline-event shot">
+                                                    <span class="time">34'</span>
+                                                    <span class="event">🎯 Shot (xG: 0.73)</span>
+                                                </div>
+                                                <div class="timeline-event card">
+                                                    <span class="time">41'</span>
+                                                    <span class="event">🟨 Yellow Card</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
