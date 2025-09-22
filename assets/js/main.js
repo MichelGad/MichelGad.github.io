@@ -529,44 +529,9 @@ document.addEventListener('DOMContentLoaded', function() {
     `;
     document.head.appendChild(style);
 
-    // Hero Video Reverse Animation
+    // Hero Video Management
     const heroVideo = document.querySelector('.hero-video');
     if (heroVideo) {
-        let isReversing = false;
-        let animationInterval;
-        let isTransitioning = false;
-        
-        // Function to play video in reverse by manually controlling currentTime
-        function playReverse() {
-            if (animationInterval) clearInterval(animationInterval);
-            
-            animationInterval = setInterval(() => {
-                if (heroVideo.currentTime > 0.1) {
-                    heroVideo.currentTime -= 0.05; // Larger steps for better performance
-                } else {
-                    // Reached the beginning, switch to forward immediately
-                    clearInterval(animationInterval);
-                    isReversing = false;
-                    isTransitioning = false;
-                    heroVideo.currentTime = 0;
-                    heroVideo.play();
-                }
-            }, 50); // 20fps for better performance
-        }
-        
-        // Function to handle video end and start reverse
-        function handleVideoEnd() {
-            if (!isReversing && !isTransitioning) {
-                isReversing = true;
-                isTransitioning = true;
-                // Start reverse immediately without pause
-                playReverse();
-            }
-        }
-        
-        // Listen for video events
-        heroVideo.addEventListener('ended', handleVideoEnd);
-        
         // Ensure video starts playing
         heroVideo.addEventListener('loadeddata', function() {
             heroVideo.play();
@@ -574,6 +539,12 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // Handle video load and play
         heroVideo.addEventListener('canplay', function() {
+            heroVideo.play();
+        });
+        
+        // When video ends, restart from beginning (no reverse playback)
+        heroVideo.addEventListener('ended', function() {
+            heroVideo.currentTime = 0;
             heroVideo.play();
         });
     }
