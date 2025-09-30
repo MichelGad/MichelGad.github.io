@@ -2040,7 +2040,7 @@ p {
     display: flex;
     flex-direction: column;
     height: auto;
-    min-height: 350px;
+    min-height: 500px;
 }
 
 .publication-card.featured {
